@@ -1,0 +1,19 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 2
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: English,DejaVu Sans,24,&H00FFFFFF,&H00FFFFFF,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,68,1
+Style: Chinese,Noto Sans CJK SC,32,&H00E7EEEE,&H00E7EEEE,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,22,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:06.28,English,,0,0,0,,{\an5\pos(640,628)}Without a capacity limit, target K of two produces the same partition and cutsize three.
+Dialogue: 0,0:00:00.10,0:00:06.28,Chinese,,0,0,0,,{\an5\pos(640,677)}没有容量限制时，目标 K 为二仍得到相同分组，割边权重总和为三。
+Dialogue: 0,0:00:06.28,0:00:11.24,English,,0,0,0,,{\an5\pos(640,628)}With capacity two, the result has three clusters and cutsize eight.
+Dialogue: 0,0:00:06.28,0:00:11.24,Chinese,,0,0,0,,{\an5\pos(640,677)}容量为二时，结果有三个簇，割边权重总和为八。
+Dialogue: 0,0:00:11.24,0:00:17.43,English,,0,0,0,,{\an5\pos(640,628)}The difference of five comes exactly from A to C and B to C becoming cross-cluster edges.
+Dialogue: 0,0:00:11.24,0:00:17.43,Chinese,,0,0,0,,{\an5\pos(640,677)}多出的五，恰好来自 A 到 C 和 B 到 C 两条边变成跨簇边。
+Dialogue: 0,0:00:17.43,0:00:24.03,English,,0,0,0,,{\an5\pos(640,628)}If target K is three instead, that same capacity-two result successfully reaches the target.
+Dialogue: 0,0:00:17.43,0:00:24.03,Chinese,,0,0,0,,{\an5\pos(640,677)}如果目标 K 改为三，那么同一个容量为二的结果就成功达到目标。

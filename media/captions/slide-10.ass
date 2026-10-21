@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 2
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: English,DejaVu Sans,24,&H00FFFFFF,&H00FFFFFF,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,68,1
+Style: Chinese,Noto Sans CJK SC,32,&H00E7EEEE,&H00E7EEEE,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,22,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:06.13,English,,0,0,0,,{\an5\pos(640,628)}Restart from singletons, keeping target K at two but increasing capacity to three.
+Dialogue: 0,0:00:00.10,0:00:06.13,Chinese,,0,0,0,,{\an5\pos(640,677)}重新从单节点簇开始，保持目标 K 为二，把容量提高到三。
+Dialogue: 0,0:00:06.13,0:00:11.55,English,,0,0,0,,{\an5\pos(640,628)}After merging nodes A and B, their cluster can now legally absorb node C.
+Dialogue: 0,0:00:06.13,0:00:11.55,Chinese,,0,0,0,,{\an5\pos(640,677)}合并 A 与 B 后，它们所在的簇现在可以合法吸收 C。
+Dialogue: 0,0:00:11.55,0:00:16.99,English,,0,0,0,,{\an5\pos(640,628)}This ties with D and E, but our rule first merges the A B cluster with C.
+Dialogue: 0,0:00:11.55,0:00:16.99,Chinese,,0,0,0,,{\an5\pos(640,677)}它的亲和度与 D、E 簇对相同，成员标签规则优先选择前者。
+Dialogue: 0,0:00:16.99,0:00:23.04,English,,0,0,0,,{\an5\pos(640,628)}Then D and E merge, leaving two clusters: A with B and C, and D with E.
+Dialogue: 0,0:00:16.99,0:00:23.04,Chinese,,0,0,0,,{\an5\pos(640,677)}随后合并 D 与 E，最终得到 A、B、C 一簇和 D、E 一簇。
+Dialogue: 0,0:00:23.04,0:00:27.97,English,,0,0,0,,{\an5\pos(640,628)}Only the C to D and C to E edges cross, so cutsize is three.
+Dialogue: 0,0:00:23.04,0:00:27.97,Chinese,,0,0,0,,{\an5\pos(640,677)}只有 C 到 D、C 到 E 两条边跨簇，因此割边权重总和为三。

@@ -1,0 +1,69 @@
+{
+  "voice": "en-US-JennyNeural",
+  "rate": "-5%",
+  "text": "In this four-node example, every size is one and capacity is two. Greedy takes the weight-ten A B edge, then the weight-one C D edge. The result reaches K legally, but its cross-cluster edges sum to eighteen. Pairing node A with C, and node B with D, instead gives cutsize eleven. This better legal partition proves that greedy does not guarantee global optimality.",
+  "cues": [
+    {
+      "en": "In this four-node example, every size is one and capacity is two.",
+      "zh": "在这个四节点例子中，每个节点大小为一，容量为二。",
+      "start": 0.1,
+      "end": 5.1157895
+    },
+    {
+      "en": "Greedy takes the weight-ten A B edge, then the weight-one C D edge.",
+      "zh": "贪心先选择权重十的 A、B 边，再选择权重一的 C、D 边。",
+      "start": 5.0657895,
+      "end": 10.0657895
+    },
+    {
+      "en": "The result reaches K legally, but its cross-cluster edges sum to eighteen.",
+      "zh": "结果合法达到 K，但跨簇边的权重总和为十八。",
+      "start": 10.0657895,
+      "end": 15.2631579
+    },
+    {
+      "en": "Pairing node A with C, and node B with D, instead gives cutsize eleven.",
+      "zh": "如果改为 A 与 C、B 与 D 分别成簇，割边权重总和只有十一。",
+      "start": 15.263158,
+      "end": 20.7105264
+    },
+    {
+      "en": "This better legal partition proves that greedy does not guarantee global optimality.",
+      "zh": "这个更好的合法分组说明：贪心算法不保证全局最优。",
+      "start": 20.7105265,
+      "end": 26.2500002
+    }
+  ],
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 50157895,
+      "text": "In this four-node example, every size is one and capacity is two."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 50657895,
+      "duration": 50000000,
+      "text": "Greedy takes the weight-ten A B edge, then the weight-one C D edge."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 100657895,
+      "duration": 51973684,
+      "text": "The result reaches K legally, but its cross-cluster edges sum to eighteen."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 152631580,
+      "duration": 54473684,
+      "text": "Pairing node A with C, and node B with D, instead gives cutsize eleven."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 207105265,
+      "duration": 55394737,
+      "text": "This better legal partition proves that greedy does not guarantee global optimality."
+    }
+  ]
+}

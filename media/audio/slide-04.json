@@ -1,0 +1,69 @@
+{
+  "voice": "en-US-JennyNeural",
+  "rate": "-5%",
+  "text": "Affinity measures how strongly two current clusters are connected. Add every original edge weight that connects one cluster to the other. Cutsize adds all edges whose endpoints belong to different clusters, counting each edge once. When two clusters merge, their connecting edges become internal. So cutsize falls by exactly their affinity; no other partition boundary changes.",
+  "cues": [
+    {
+      "en": "Affinity measures how strongly two current clusters are connected.",
+      "zh": "亲和度衡量当前两个簇之间的连接强度。",
+      "start": 0.1,
+      "end": 4.5894737
+    },
+    {
+      "en": "Add every original edge weight that connects one cluster to the other.",
+      "zh": "将连接这两个簇的所有原始边权相加。",
+      "start": 4.5394737,
+      "end": 9.1052632
+    },
+    {
+      "en": "Cutsize adds all edges whose endpoints belong to different clusters, counting each edge once.",
+      "zh": "割边权重总和统计端点位于不同簇的全部边，每条边只计一次。",
+      "start": 9.1052632,
+      "end": 15.5263159
+    },
+    {
+      "en": "When two clusters merge, their connecting edges become internal.",
+      "zh": "两个簇合并后，它们之间的边就变成簇内边。",
+      "start": 15.5263159,
+      "end": 20.0657896
+    },
+    {
+      "en": "So cutsize falls by exactly their affinity; no other partition boundary changes.",
+      "zh": "因此割边权重总和恰好减少两簇的亲和度，其他分组边界不变。",
+      "start": 20.0657897,
+      "end": 26.0526318
+    }
+  ],
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 44894737,
+      "text": "Affinity measures how strongly two current clusters are connected."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 45394737,
+      "duration": 45657895,
+      "text": "Add every original edge weight that connects one cluster to the other."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 91052632,
+      "duration": 64210527,
+      "text": "Cutsize adds all edges whose endpoints belong to different clusters, counting each edge once."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 155263159,
+      "duration": 45394737,
+      "text": "When two clusters merge, their connecting edges become internal."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 200657897,
+      "duration": 59868421,
+      "text": "So cutsize falls by exactly their affinity; no other partition boundary changes."
+    }
+  ]
+}

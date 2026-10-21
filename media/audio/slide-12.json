@@ -1,0 +1,69 @@
+{
+  "voice": "en-US-JennyNeural",
+  "rate": "-5%",
+  "text": "For a small teaching graph, recomputing affinities from original edges is a clear implementation. After each merge, update membership and sizes, then rebuild the candidate list. One blocked candidate does not justify stopping; another legal pair may still exist. Stop at K, or when every positive-affinity candidate is illegal. Our reference rejects invalid sizes and never forces a zero-affinity merge just to reach K.",
+  "cues": [
+    {
+      "en": "For a small teaching graph, recomputing affinities from original edges is a clear implementation.",
+      "zh": "对于教学小图，从原始边重新计算亲和度是一种清晰的实现方式。",
+      "start": 0.1,
+      "end": 6.6684211
+    },
+    {
+      "en": "After each merge, update membership and sizes, then rebuild the candidate list.",
+      "zh": "每次合并后，更新成员关系和大小，再重建候选列表。",
+      "start": 6.6184211,
+      "end": 12.4078948
+    },
+    {
+      "en": "One blocked candidate does not justify stopping; another legal pair may still exist.",
+      "zh": "一个候选被容量阻止，并不意味着可以停止；可能还有其他合法簇对。",
+      "start": 12.4078948,
+      "end": 18.5921054
+    },
+    {
+      "en": "Stop at K, or when every positive-affinity candidate is illegal.",
+      "zh": "达到 K 时停止，或者在所有正亲和度候选都不合法时停止。",
+      "start": 18.5921054,
+      "end": 23.4473686
+    },
+    {
+      "en": "Our reference rejects invalid sizes and never forces a zero-affinity merge just to reach K.",
+      "zh": "参考实现拒绝无效大小，也不会为了凑够 K 而强行合并零亲和度簇对。",
+      "start": 23.4473687,
+      "end": 30.0789477
+    }
+  ],
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 65684211,
+      "text": "For a small teaching graph, recomputing affinities from original edges is a clear implementation."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 66184211,
+      "duration": 57894737,
+      "text": "After each merge, update membership and sizes, then rebuild the candidate list."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 124078948,
+      "duration": 61842106,
+      "text": "One blocked candidate does not justify stopping; another legal pair may still exist."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 185921054,
+      "duration": 48552632,
+      "text": "Stop at K, or when every positive-affinity candidate is illegal."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 234473687,
+      "duration": 66315790,
+      "text": "Our reference rejects invalid sizes and never forces a zero-affinity merge just to reach K."
+    }
+  ]
+}

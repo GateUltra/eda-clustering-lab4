@@ -1,0 +1,69 @@
+{
+  "voice": "en-US-JennyNeural",
+  "rate": "-5%",
+  "text": "Affinity guides the choice, while capacity determines which choices are legal. Contraction changes the graph, so every later decision must use updated information. A legal partition, reaching the target, and global optimality are three different outcomes. The five-node example comes from Yongfu Li's E D A learning course. This lesson adds new explanations, narration, bilingual captions, and reproducible exercises.",
+  "cues": [
+    {
+      "en": "Affinity guides the choice, while capacity determines which choices are legal.",
+      "zh": "亲和度指导选择，容量决定哪些选择合法。",
+      "start": 0.1,
+      "end": 5.431579
+    },
+    {
+      "en": "Contraction changes the graph, so every later decision must use updated information.",
+      "zh": "收缩会改变图，因此后续决策必须使用更新后的信息。",
+      "start": 5.381579,
+      "end": 11.3421053
+    },
+    {
+      "en": "A legal partition, reaching the target, and global optimality are three different outcomes.",
+      "zh": "始终区分分组合法、达到目标和全局最优这三件事。",
+      "start": 11.3421054,
+      "end": 17.6184212
+    },
+    {
+      "en": "The five-node example comes from Yongfu Li's E D A learning course.",
+      "zh": "本课的五节点例子来自 Yongfu Li 的 EDA learning 课程。",
+      "start": 17.6184212,
+      "end": 22.2236844
+    },
+    {
+      "en": "This lesson adds new explanations, narration, bilingual captions, and reproducible exercises.",
+      "zh": "本课新增讲解、配音、双语字幕与可复现实验。",
+      "start": 22.2236844,
+      "end": 29.7500002
+    }
+  ],
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 53315790,
+      "text": "Affinity guides the choice, while capacity determines which choices are legal."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 53815790,
+      "duration": 59605263,
+      "text": "Contraction changes the graph, so every later decision must use updated information."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 113421054,
+      "duration": 62763158,
+      "text": "A legal partition, reaching the target, and global optimality are three different outcomes."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 176184212,
+      "duration": 46052632,
+      "text": "The five-node example comes from Yongfu Li's E D A learning course."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 222236844,
+      "duration": 75263158,
+      "text": "This lesson adds new explanations, narration, bilingual captions, and reproducible exercises."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 2
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: English,DejaVu Sans,24,&H00FFFFFF,&H00FFFFFF,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,68,1
+Style: Chinese,Noto Sans CJK SC,32,&H00E7EEEE,&H00E7EEEE,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,22,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:05.07,English,,0,0,0,,{\an5\pos(640,628)}In this four-node example, every size is one and capacity is two.
+Dialogue: 0,0:00:00.10,0:00:05.07,Chinese,,0,0,0,,{\an5\pos(640,677)}在这个四节点例子中，每个节点大小为一，容量为二。
+Dialogue: 0,0:00:05.07,0:00:10.07,English,,0,0,0,,{\an5\pos(640,628)}Greedy takes the weight-ten A B edge, then the weight-one C D edge.
+Dialogue: 0,0:00:05.07,0:00:10.07,Chinese,,0,0,0,,{\an5\pos(640,677)}贪心先选择权重十的 A、B 边，再选择权重一的 C、D 边。
+Dialogue: 0,0:00:10.07,0:00:15.26,English,,0,0,0,,{\an5\pos(640,628)}The result reaches K legally, but its cross-cluster edges sum to eighteen.
+Dialogue: 0,0:00:10.07,0:00:15.26,Chinese,,0,0,0,,{\an5\pos(640,677)}结果合法达到 K，但跨簇边的权重总和为十八。
+Dialogue: 0,0:00:15.26,0:00:20.71,English,,0,0,0,,{\an5\pos(640,628)}Pairing node A with C, and node B with D, instead gives cutsize eleven.
+Dialogue: 0,0:00:15.26,0:00:20.71,Chinese,,0,0,0,,{\an5\pos(640,677)}如果改为 A 与 C、B 与 D 分别成簇，割边权重总和只有十一。
+Dialogue: 0,0:00:20.71,0:00:26.25,English,,0,0,0,,{\an5\pos(640,628)}This better legal partition proves that greedy does not guarantee global optimality.
+Dialogue: 0,0:00:20.71,0:00:26.25,Chinese,,0,0,0,,{\an5\pos(640,677)}这个更好的合法分组说明：贪心算法不保证全局最优。

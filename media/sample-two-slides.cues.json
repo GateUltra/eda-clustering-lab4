@@ -1,0 +1,65 @@
+[
+  {
+    "en": "How can we group connected cells without making any cluster too large?",
+    "zh": "如何把连接紧密的电路单元分组，同时避免任何簇过大？",
+    "start": 0.1,
+    "end": 4.8552632,
+    "slide": 1
+  },
+  {
+    "en": "This lesson explains size-constrained agglomerative clustering through one small graph.",
+    "zh": "本课通过一个小图，讲解带大小约束的凝聚式聚类。",
+    "start": 4.8552632,
+    "end": 10.3947369,
+    "slide": 1
+  },
+  {
+    "en": "We will follow merges, measure cutsize, and explain why the algorithm can stop early.",
+    "zh": "我们将跟踪合并过程、计算割边权重总和，并解释算法为何有时提前停止。",
+    "start": 10.3947369,
+    "end": 16.5263159,
+    "slide": 1
+  },
+  {
+    "en": "By the end, you should be able to reproduce the result and report its limitations.",
+    "zh": "学完后，你应能复现结果，并说明它的局限。",
+    "start": 16.5263159,
+    "end": 21.8684212,
+    "slide": 1
+  },
+  {
+    "en": "In this simplified E D A model, each node represents a cell.",
+    "zh": "在这个简化的电子设计自动化模型中，每个节点代表一个电路单元。",
+    "start": 22.5,
+    "end": 27.005263199999998,
+    "slide": 2
+  },
+  {
+    "en": "An edge weight describes connectivity: a larger weight means a stronger connection.",
+    "zh": "边权表示连接强度：权重越大，连接越强。",
+    "start": 27.005263199999998,
+    "end": 32.4526316,
+    "slide": 2
+  },
+  {
+    "en": "A node also has a size, which can represent cell area rather than node count.",
+    "zh": "节点还有大小属性，可以代表单元面积，而不只是节点个数。",
+    "start": 32.4526317,
+    "end": 38.044737,
+    "slide": 2
+  },
+  {
+    "en": "Here every node has size one, so cluster size equals its number of members.",
+    "zh": "这里每个节点的大小都是一，因此簇大小等于成员个数。",
+    "start": 38.044737,
+    "end": 43.5842107,
+    "slide": 2
+  },
+  {
+    "en": "Real netlists may use hypergraphs; this lab deliberately uses an undirected weighted graph.",
+    "zh": "真实网表可能使用超图；本实验特意采用无向加权图。",
+    "start": 43.5842107,
+    "end": 50.031579199999996,
+    "slide": 2
+  }
+]

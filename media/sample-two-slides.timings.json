@@ -1,0 +1,18 @@
+[
+  {
+    "slide": 1,
+    "start": 0,
+    "end": 22.4,
+    "speech_file_duration": 21.936,
+    "video_duration": 22.4,
+    "captions": 4
+  },
+  {
+    "slide": 2,
+    "start": 22.4,
+    "end": 50.56,
+    "speech_file_duration": 27.696,
+    "video_duration": 28.16,
+    "captions": 5
+  }
+]

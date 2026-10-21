@@ -1,0 +1,130 @@
+[
+  {
+    "slide": 1,
+    "start": 0,
+    "end": 22.4,
+    "speech_file_duration": 21.936,
+    "video_duration": 22.4,
+    "captions": 4
+  },
+  {
+    "slide": 2,
+    "start": 22.4,
+    "end": 50.56,
+    "speech_file_duration": 27.696,
+    "video_duration": 28.16,
+    "captions": 5
+  },
+  {
+    "slide": 3,
+    "start": 50.56,
+    "end": 76.2,
+    "speech_file_duration": 25.176,
+    "video_duration": 25.64,
+    "captions": 5
+  },
+  {
+    "slide": 4,
+    "start": 76.2,
+    "end": 102.80000000000001,
+    "speech_file_duration": 26.112,
+    "video_duration": 26.6,
+    "captions": 5
+  },
+  {
+    "slide": 5,
+    "start": 102.80000000000001,
+    "end": 132.44,
+    "speech_file_duration": 29.16,
+    "video_duration": 29.64,
+    "captions": 5
+  },
+  {
+    "slide": 6,
+    "start": 132.44,
+    "end": 158.56,
+    "speech_file_duration": 25.656,
+    "video_duration": 26.12,
+    "captions": 5
+  },
+  {
+    "slide": 7,
+    "start": 158.56,
+    "end": 185.08,
+    "speech_file_duration": 26.064,
+    "video_duration": 26.52,
+    "captions": 5
+  },
+  {
+    "slide": 8,
+    "start": 185.08,
+    "end": 211.44,
+    "speech_file_duration": 25.896,
+    "video_duration": 26.36,
+    "captions": 5
+  },
+  {
+    "slide": 9,
+    "start": 211.44,
+    "end": 239.72,
+    "speech_file_duration": 27.792,
+    "video_duration": 28.28,
+    "captions": 5
+  },
+  {
+    "slide": 10,
+    "start": 239.72,
+    "end": 268.24,
+    "speech_file_duration": 28.032,
+    "video_duration": 28.52,
+    "captions": 5
+  },
+  {
+    "slide": 11,
+    "start": 268.24,
+    "end": 292.8,
+    "speech_file_duration": 24.096,
+    "video_duration": 24.56,
+    "captions": 4
+  },
+  {
+    "slide": 12,
+    "start": 292.8,
+    "end": 323.40000000000003,
+    "speech_file_duration": 30.144,
+    "video_duration": 30.6,
+    "captions": 5
+  },
+  {
+    "slide": 13,
+    "start": 323.40000000000003,
+    "end": 353.96000000000004,
+    "speech_file_duration": 30.072,
+    "video_duration": 30.56,
+    "captions": 5
+  },
+  {
+    "slide": 14,
+    "start": 353.96000000000004,
+    "end": 380.72,
+    "speech_file_duration": 26.304,
+    "video_duration": 26.76,
+    "captions": 5
+  },
+  {
+    "slide": 15,
+    "start": 380.72,
+    "end": 409.12,
+    "speech_file_duration": 27.936,
+    "video_duration": 28.4,
+    "captions": 5
+  },
+  {
+    "slide": 16,
+    "start": 409.12,
+    "end": 439.4,
+    "speech_file_duration": 29.808,
+    "video_duration": 30.28,
+    "captions": 5
+  }
+]

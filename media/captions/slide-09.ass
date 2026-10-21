@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 2
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: English,DejaVu Sans,24,&H00FFFFFF,&H00FFFFFF,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,68,1
+Style: Chinese,Noto Sans CJK SC,32,&H00E7EEEE,&H00E7EEEE,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,22,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:05.84,English,,0,0,0,,{\an5\pos(640,628)}We now have three clusters, and none of the remaining positive-affinity merges is legal.
+Dialogue: 0,0:00:00.10,0:00:05.84,Chinese,,0,0,0,,{\an5\pos(640,677)}现在有三个簇，剩余亲和度为正的合并都不合法。
+Dialogue: 0,0:00:05.84,0:00:09.59,English,,0,0,0,,{\an5\pos(640,628)}The algorithm stops even though target K is two.
+Dialogue: 0,0:00:05.84,0:00:09.59,Chinese,,0,0,0,,{\an5\pos(640,677)}虽然目标 K 为二，算法仍必须停止。
+Dialogue: 0,0:00:09.59,0:00:16.32,English,,0,0,0,,{\an5\pos(640,628)}This target is fundamentally infeasible: two clusters of capacity two hold only four units.
+Dialogue: 0,0:00:09.59,0:00:16.32,Chinese,,0,0,0,,{\an5\pos(640,677)}这个目标本身不可行：两个容量为二的簇最多容纳四个大小单位。
+Dialogue: 0,0:00:16.32,0:00:22.26,English,,0,0,0,,{\an5\pos(640,628)}Our graph contains five units, so no algorithm can satisfy both requirements.
+Dialogue: 0,0:00:16.32,0:00:22.26,Chinese,,0,0,0,,{\an5\pos(640,677)}图中共有五个大小单位，因此任何算法都无法同时满足这两个要求。
+Dialogue: 0,0:00:22.26,0:00:27.74,English,,0,0,0,,{\an5\pos(640,628)}The result respects capacity, but target reached must be reported as false.
+Dialogue: 0,0:00:22.26,0:00:27.74,Chinese,,0,0,0,,{\an5\pos(640,677)}结果符合容量约束，但“是否达到目标”必须报告为否。

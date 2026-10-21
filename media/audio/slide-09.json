@@ -1,0 +1,69 @@
+{
+  "voice": "en-US-JennyNeural",
+  "rate": "-5%",
+  "text": "We now have three clusters, and none of the remaining positive-affinity merges is legal. The algorithm stops even though target K is two. This target is fundamentally infeasible: two clusters of capacity two hold only four units. Our graph contains five units, so no algorithm can satisfy both requirements. The result respects capacity, but target reached must be reported as false.",
+  "cues": [
+    {
+      "en": "We now have three clusters, and none of the remaining positive-affinity merges is legal.",
+      "zh": "现在有三个簇，剩余亲和度为正的合并都不合法。",
+      "start": 0.1,
+      "end": 5.8921053
+    },
+    {
+      "en": "The algorithm stops even though target K is two.",
+      "zh": "虽然目标 K 为二，算法仍必须停止。",
+      "start": 5.8421053,
+      "end": 9.5921053
+    },
+    {
+      "en": "This target is fundamentally infeasible: two clusters of capacity two hold only four units.",
+      "zh": "这个目标本身不可行：两个容量为二的簇最多容纳四个大小单位。",
+      "start": 9.5921053,
+      "end": 16.3157895
+    },
+    {
+      "en": "Our graph contains five units, so no algorithm can satisfy both requirements.",
+      "zh": "图中共有五个大小单位，因此任何算法都无法同时满足这两个要求。",
+      "start": 16.3157896,
+      "end": 22.263158
+    },
+    {
+      "en": "The result respects capacity, but target reached must be reported as false.",
+      "zh": "结果符合容量约束，但“是否达到目标”必须报告为否。",
+      "start": 22.2631581,
+      "end": 27.7368423
+    }
+  ],
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 57921053,
+      "text": "We now have three clusters, and none of the remaining positive-affinity merges is legal."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 58421053,
+      "duration": 37500000,
+      "text": "The algorithm stops even though target K is two."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 95921053,
+      "duration": 67236842,
+      "text": "This target is fundamentally infeasible: two clusters of capacity two hold only four units."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 163157896,
+      "duration": 59473684,
+      "text": "Our graph contains five units, so no algorithm can satisfy both requirements."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 222631581,
+      "duration": 54736842,
+      "text": "The result respects capacity, but target reached must be reported as false."
+    }
+  ]
+}

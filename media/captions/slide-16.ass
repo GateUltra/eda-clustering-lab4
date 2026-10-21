@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 2
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: English,DejaVu Sans,24,&H00FFFFFF,&H00FFFFFF,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,68,1
+Style: Chinese,Noto Sans CJK SC,32,&H00E7EEEE,&H00E7EEEE,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,22,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:05.38,English,,0,0,0,,{\an5\pos(640,628)}Affinity guides the choice, while capacity determines which choices are legal.
+Dialogue: 0,0:00:00.10,0:00:05.38,Chinese,,0,0,0,,{\an5\pos(640,677)}亲和度指导选择，容量决定哪些选择合法。
+Dialogue: 0,0:00:05.38,0:00:11.34,English,,0,0,0,,{\an5\pos(640,628)}Contraction changes the graph, so every later decision must use updated information.
+Dialogue: 0,0:00:05.38,0:00:11.34,Chinese,,0,0,0,,{\an5\pos(640,677)}收缩会改变图，因此后续决策必须使用更新后的信息。
+Dialogue: 0,0:00:11.34,0:00:17.62,English,,0,0,0,,{\an5\pos(640,628)}A legal partition, reaching the target, and global optimality are three different outcomes.
+Dialogue: 0,0:00:11.34,0:00:17.62,Chinese,,0,0,0,,{\an5\pos(640,677)}始终区分分组合法、达到目标和全局最优这三件事。
+Dialogue: 0,0:00:17.62,0:00:22.22,English,,0,0,0,,{\an5\pos(640,628)}The five-node example comes from Yongfu Li's E D A learning course.
+Dialogue: 0,0:00:17.62,0:00:22.22,Chinese,,0,0,0,,{\an5\pos(640,677)}本课的五节点例子来自 Yongfu Li 的 EDA learning 课程。
+Dialogue: 0,0:00:22.22,0:00:29.75,English,,0,0,0,,{\an5\pos(640,628)}This lesson adds new explanations, narration, bilingual captions, and reproducible exercises.
+Dialogue: 0,0:00:22.22,0:00:29.75,Chinese,,0,0,0,,{\an5\pos(640,677)}本课新增讲解、配音、双语字幕与可复现实验。

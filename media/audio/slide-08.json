@@ -1,0 +1,69 @@
+{
+  "voice": "en-US-JennyNeural",
+  "rate": "-5%",
+  "text": "Now set target K to two and capacity to two. Although the A B cluster connects strongly to C, combining them would create size three. That merge is illegal, so we skip it and consider the next candidate. D and E can merge legally, reducing cutsize by another five to eight. Nodes A and B form one cluster, C remains alone, and nodes D and E form another.",
+  "cues": [
+    {
+      "en": "Now set target K to two and capacity to two.",
+      "zh": "现在将目标 K 设为二，容量也设为二。",
+      "start": 0.1,
+      "end": 3.9184211
+    },
+    {
+      "en": "Although the A B cluster connects strongly to C, combining them would create size three.",
+      "zh": "虽然 A、B 所在簇与 C 的连接很强，合并后大小却会达到三。",
+      "start": 3.8684211,
+      "end": 9.6973685
+    },
+    {
+      "en": "That merge is illegal, so we skip it and consider the next candidate.",
+      "zh": "这次合并不合法，因此跳过它，继续检查下一个候选。",
+      "start": 9.6973685,
+      "end": 14.5394738
+    },
+    {
+      "en": "D and E can merge legally, reducing cutsize by another five to eight.",
+      "zh": "D 与 E 可以合法合并，割边权重总和再减少五，变为八。",
+      "start": 14.5394738,
+      "end": 19.7894738
+    },
+    {
+      "en": "Nodes A and B form one cluster, C remains alone, and nodes D and E form another.",
+      "zh": "A 与 B 组成一簇，C 单独成簇，D 与 E 组成另一簇。",
+      "start": 19.7894739,
+      "end": 25.8289476
+    }
+  ],
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 38184211,
+      "text": "Now set target K to two and capacity to two."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 38684211,
+      "duration": 58289474,
+      "text": "Although the A B cluster connects strongly to C, combining them would create size three."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 96973685,
+      "duration": 48421053,
+      "text": "That merge is illegal, so we skip it and consider the next candidate."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 145394738,
+      "duration": 52500000,
+      "text": "D and E can merge legally, reducing cutsize by another five to eight."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 197894739,
+      "duration": 60394737,
+      "text": "Nodes A and B form one cluster, C remains alone, and nodes D and E form another."
+    }
+  ]
+}

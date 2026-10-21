@@ -1,0 +1,69 @@
+{
+  "voice": "en-US-JennyNeural",
+  "rate": "-5%",
+  "text": "Start with one cluster per node, then consider pairs with positive affinity. Discard pairs that would exceed capacity, and choose the strongest remaining pair. For ties, sort the members within each cluster, then order the two clusters lexicographically. Compare the first member list, then the second; the smallest pair wins. Our slides and code share this rule; upstream instead uses synthetic cluster identifiers.",
+  "cues": [
+    {
+      "en": "Start with one cluster per node, then consider pairs with positive affinity.",
+      "zh": "从每个节点各自成簇开始，只考虑亲和度为正的簇对。",
+      "start": 0.1,
+      "end": 5.3789474
+    },
+    {
+      "en": "Discard pairs that would exceed capacity, and choose the strongest remaining pair.",
+      "zh": "排除合并后超容量的簇对，再选择剩余候选中亲和度最高的。",
+      "start": 5.3289474,
+      "end": 10.75
+    },
+    {
+      "en": "For ties, sort the members within each cluster, then order the two clusters lexicographically.",
+      "zh": "出现平局时，先对每个簇的成员标签排序，再按字典序排列簇对。",
+      "start": 10.7500001,
+      "end": 17.4210528
+    },
+    {
+      "en": "Compare the first member list, then the second; the smallest pair wins.",
+      "zh": "先比较第一个成员列表，再比较第二个，字典序最小的簇对优先。",
+      "start": 17.4210528,
+      "end": 22.8157897
+    },
+    {
+      "en": "Our slides and code share this rule; upstream instead uses synthetic cluster identifiers.",
+      "zh": "本课幻灯片与两种实现统一使用这条规则；上游则使用生成的簇编号。",
+      "start": 22.8157897,
+      "end": 29.0921055
+    }
+  ],
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 52789474,
+      "text": "Start with one cluster per node, then consider pairs with positive affinity."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 53289474,
+      "duration": 54210526,
+      "text": "Discard pairs that would exceed capacity, and choose the strongest remaining pair."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 107500001,
+      "duration": 66710527,
+      "text": "For ties, sort the members within each cluster, then order the two clusters lexicographically."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 174210528,
+      "duration": 53947369,
+      "text": "Compare the first member list, then the second; the smallest pair wins."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 228157897,
+      "duration": 62763158,
+      "text": "Our slides and code share this rule; upstream instead uses synthetic cluster identifiers."
+    }
+  ]
+}

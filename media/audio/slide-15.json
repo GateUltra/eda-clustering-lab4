@@ -1,0 +1,69 @@
+{
+  "voice": "en-US-JennyNeural",
+  "rate": "-5%",
+  "text": "In the interactive lab, predict the next merge before revealing it. Run all four parameter settings and explain each stopping condition. Then complete the Python exercise and compare it with the reference traces. Report actual cluster count, cutsize, sizes, capacity compliance, and whether K was reached. Passing a quiz checks understanding, but does not replace implementation or maintenance.",
+  "cues": [
+    {
+      "en": "In the interactive lab, predict the next merge before revealing it.",
+      "zh": "在交互实验中，先预测下一次合并，再查看结果。",
+      "start": 0.1,
+      "end": 4.8131579
+    },
+    {
+      "en": "Run all four parameter settings and explain each stopping condition.",
+      "zh": "运行四组参数，并解释每组为什么停止。",
+      "start": 4.7631579,
+      "end": 9.5131579
+    },
+    {
+      "en": "Then complete the Python exercise and compare it with the reference traces.",
+      "zh": "随后完成 Python 实现练习，并与参考轨迹比较。",
+      "start": 9.513158,
+      "end": 14.5000001
+    },
+    {
+      "en": "Report actual cluster count, cutsize, sizes, capacity compliance, and whether K was reached.",
+      "zh": "记录实际簇数、割边权重总和、各簇大小、容量是否合规，以及是否达到 K。",
+      "start": 14.5000001,
+      "end": 22.0921054
+    },
+    {
+      "en": "Passing a quiz checks understanding, but does not replace implementation or maintenance.",
+      "zh": "测验通过可以检验理解，但本身不能替代实现任务或课程维护交付。",
+      "start": 22.0921055,
+      "end": 27.8815792
+    }
+  ],
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 47131579,
+      "text": "In the interactive lab, predict the next merge before revealing it."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 47631579,
+      "duration": 47500000,
+      "text": "Run all four parameter settings and explain each stopping condition."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 95131580,
+      "duration": 49868421,
+      "text": "Then complete the Python exercise and compare it with the reference traces."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 145000001,
+      "duration": 75921053,
+      "text": "Report actual cluster count, cutsize, sizes, capacity compliance, and whether K was reached."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 220921055,
+      "duration": 57894737,
+      "text": "Passing a quiz checks understanding, but does not replace implementation or maintenance."
+    }
+  ]
+}

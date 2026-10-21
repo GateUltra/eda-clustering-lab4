@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 2
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: English,DejaVu Sans,24,&H00FFFFFF,&H00FFFFFF,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,68,1
+Style: Chinese,Noto Sans CJK SC,32,&H00E7EEEE,&H00E7EEEE,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,22,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:05.89,English,,0,0,0,,{\an5\pos(640,628)}Initially, all five nodes are separate, so every edge crosses a cluster boundary.
+Dialogue: 0,0:00:00.10,0:00:05.89,Chinese,,0,0,0,,{\an5\pos(640,677)}初始时五个节点各自成簇，因此每条边都跨越簇边界。
+Dialogue: 0,0:00:05.89,0:00:10.55,English,,0,0,0,,{\an5\pos(640,628)}The six edge weights add to eighteen, which is our initial cutsize.
+Dialogue: 0,0:00:05.89,0:00:10.55,Chinese,,0,0,0,,{\an5\pos(640,677)}六条边的权重之和为十八，这就是初始割边权重总和。
+Dialogue: 0,0:00:10.55,0:00:15.39,English,,0,0,0,,{\an5\pos(640,628)}Nodes A and B, and nodes D and E, each have affinity five.
+Dialogue: 0,0:00:10.55,0:00:15.39,Chinese,,0,0,0,,{\an5\pos(640,677)}A 与 B、D 与 E 的亲和度都是五。
+Dialogue: 0,0:00:15.39,0:00:20.32,English,,0,0,0,,{\an5\pos(640,628)}Our tie-break first merges nodes A and B, with combined size two.
+Dialogue: 0,0:00:15.39,0:00:20.32,Chinese,,0,0,0,,{\an5\pos(640,677)}按照平局规则，先合并 A 与 B，合并后的大小为二。
+Dialogue: 0,0:00:20.32,0:00:25.59,English,,0,0,0,,{\an5\pos(640,628)}Their edge becomes internal, reducing cutsize from eighteen to thirteen.
+Dialogue: 0,0:00:20.32,0:00:25.59,Chinese,,0,0,0,,{\an5\pos(640,677)}它们之间的边变为簇内边，使割边权重总和从十八降到十三。

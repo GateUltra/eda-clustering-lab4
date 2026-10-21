@@ -1,0 +1,69 @@
+{
+  "voice": "en-US-JennyNeural",
+  "rate": "-5%",
+  "text": "Initially, all five nodes are separate, so every edge crosses a cluster boundary. The six edge weights add to eighteen, which is our initial cutsize. Nodes A and B, and nodes D and E, each have affinity five. Our tie-break first merges nodes A and B, with combined size two. Their edge becomes internal, reducing cutsize from eighteen to thirteen.",
+  "cues": [
+    {
+      "en": "Initially, all five nodes are separate, so every edge crosses a cluster boundary.",
+      "zh": "初始时五个节点各自成簇，因此每条边都跨越簇边界。",
+      "start": 0.1,
+      "end": 5.9447369
+    },
+    {
+      "en": "The six edge weights add to eighteen, which is our initial cutsize.",
+      "zh": "六条边的权重之和为十八，这就是初始割边权重总和。",
+      "start": 5.8947369,
+      "end": 10.5526316
+    },
+    {
+      "en": "Nodes A and B, and nodes D and E, each have affinity five.",
+      "zh": "A 与 B、D 与 E 的亲和度都是五。",
+      "start": 10.5526317,
+      "end": 15.394737
+    },
+    {
+      "en": "Our tie-break first merges nodes A and B, with combined size two.",
+      "zh": "按照平局规则，先合并 A 与 B，合并后的大小为二。",
+      "start": 15.394737,
+      "end": 20.3157896
+    },
+    {
+      "en": "Their edge becomes internal, reducing cutsize from eighteen to thirteen.",
+      "zh": "它们之间的边变为簇内边，使割边权重总和从十八降到十三。",
+      "start": 20.3157897,
+      "end": 25.5921055
+    }
+  ],
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 58447369,
+      "text": "Initially, all five nodes are separate, so every edge crosses a cluster boundary."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 58947369,
+      "duration": 46578947,
+      "text": "The six edge weights add to eighteen, which is our initial cutsize."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 105526317,
+      "duration": 48421053,
+      "text": "Nodes A and B, and nodes D and E, each have affinity five."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 153947370,
+      "duration": 49210526,
+      "text": "Our tie-break first merges nodes A and B, with combined size two."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 203157897,
+      "duration": 52763158,
+      "text": "Their edge becomes internal, reducing cutsize from eighteen to thirteen."
+    }
+  ]
+}

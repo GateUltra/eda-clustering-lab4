@@ -1,0 +1,69 @@
+{
+  "voice": "en-US-JennyNeural",
+  "rate": "-5%",
+  "text": "Restart from singletons, keeping target K at two but increasing capacity to three. After merging nodes A and B, their cluster can now legally absorb node C. This ties with D and E, but our rule first merges the A B cluster with C. Then D and E merge, leaving two clusters: A with B and C, and D with E. Only the C to D and C to E edges cross, so cutsize is three.",
+  "cues": [
+    {
+      "en": "Restart from singletons, keeping target K at two but increasing capacity to three.",
+      "zh": "重新从单节点簇开始，保持目标 K 为二，把容量提高到三。",
+      "start": 0.1,
+      "end": 6.181579
+    },
+    {
+      "en": "After merging nodes A and B, their cluster can now legally absorb node C.",
+      "zh": "合并 A 与 B 后，它们所在的簇现在可以合法吸收 C。",
+      "start": 6.131579,
+      "end": 11.5526316
+    },
+    {
+      "en": "This ties with D and E, but our rule first merges the A B cluster with C.",
+      "zh": "它的亲和度与 D、E 簇对相同，成员标签规则优先选择前者。",
+      "start": 11.5526317,
+      "end": 16.9868422
+    },
+    {
+      "en": "Then D and E merge, leaving two clusters: A with B and C, and D with E.",
+      "zh": "随后合并 D 与 E，最终得到 A、B、C 一簇和 D、E 一簇。",
+      "start": 16.9868423,
+      "end": 23.0394739
+    },
+    {
+      "en": "Only the C to D and C to E edges cross, so cutsize is three.",
+      "zh": "只有 C 到 D、C 到 E 两条边跨簇，因此割边权重总和为三。",
+      "start": 23.0394739,
+      "end": 27.9736844
+    }
+  ],
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 60815790,
+      "text": "Restart from singletons, keeping target K at two but increasing capacity to three."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 61315790,
+      "duration": 54210526,
+      "text": "After merging nodes A and B, their cluster can now legally absorb node C."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 115526317,
+      "duration": 54342105,
+      "text": "This ties with D and E, but our rule first merges the A B cluster with C."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 169868423,
+      "duration": 60526316,
+      "text": "Then D and E merge, leaving two clusters: A with B and C, and D with E."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 230394739,
+      "duration": 49342105,
+      "text": "Only the C to D and C to E edges cross, so cutsize is three."
+    }
+  ]
+}

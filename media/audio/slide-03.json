@@ -1,0 +1,69 @@
+{
+  "voice": "en-US-JennyNeural",
+  "rate": "-5%",
+  "text": "Target K is the desired number of clusters at the end. Capacity is a hard upper limit on the total size inside each cluster. With capacity two, two unit-size cells fit together, but a third cell does not. A small cutsize does not make an oversized cluster legal. We must report whether the algorithm actually reaches K while respecting capacity.",
+  "cues": [
+    {
+      "en": "Target K is the desired number of clusters at the end.",
+      "zh": "目标 K 表示最终期望得到的簇数。",
+      "start": 0.1,
+      "end": 4.1552632
+    },
+    {
+      "en": "Capacity is a hard upper limit on the total size inside each cluster.",
+      "zh": "容量是每个簇内总大小不可超过的上限。",
+      "start": 4.1052632,
+      "end": 9.0263158
+    },
+    {
+      "en": "With capacity two, two unit-size cells fit together, but a third cell does not.",
+      "zh": "容量为二时，两个大小为一的单元可以合并，但不能再加入第三个。",
+      "start": 9.0263159,
+      "end": 15.144737
+    },
+    {
+      "en": "A small cutsize does not make an oversized cluster legal.",
+      "zh": "割边权重总和较小，并不能让超容量的簇变得合法。",
+      "start": 15.144737,
+      "end": 19.5131581
+    },
+    {
+      "en": "We must report whether the algorithm actually reaches K while respecting capacity.",
+      "zh": "我们必须报告算法在遵守容量约束的同时，是否真的达到目标 K。",
+      "start": 19.5131581,
+      "end": 25.1052634
+    }
+  ],
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 40552632,
+      "text": "Target K is the desired number of clusters at the end."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 41052632,
+      "duration": 49210526,
+      "text": "Capacity is a hard upper limit on the total size inside each cluster."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 90263159,
+      "duration": 61184211,
+      "text": "With capacity two, two unit-size cells fit together, but a third cell does not."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 151447370,
+      "duration": 43684211,
+      "text": "A small cutsize does not make an oversized cluster legal."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 195131581,
+      "duration": 55921053,
+      "text": "We must report whether the algorithm actually reaches K while respecting capacity."
+    }
+  ]
+}

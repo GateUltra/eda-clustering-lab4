@@ -1,0 +1,57 @@
+{
+  "voice": "en-US-JennyNeural",
+  "rate": "-5%",
+  "text": "Without a capacity limit, target K of two produces the same partition and cutsize three. With capacity two, the result has three clusters and cutsize eight. The difference of five comes exactly from A to C and B to C becoming cross-cluster edges. If target K is three instead, that same capacity-two result successfully reaches the target.",
+  "cues": [
+    {
+      "en": "Without a capacity limit, target K of two produces the same partition and cutsize three.",
+      "zh": "没有容量限制时，目标 K 为二仍得到相同分组，割边权重总和为三。",
+      "start": 0.1,
+      "end": 6.3263158
+    },
+    {
+      "en": "With capacity two, the result has three clusters and cutsize eight.",
+      "zh": "容量为二时，结果有三个簇，割边权重总和为八。",
+      "start": 6.2763158,
+      "end": 11.2368421
+    },
+    {
+      "en": "The difference of five comes exactly from A to C and B to C becoming cross-cluster edges.",
+      "zh": "多出的五，恰好来自 A 到 C 和 B 到 C 两条边变成跨簇边。",
+      "start": 11.2368422,
+      "end": 17.4342106
+    },
+    {
+      "en": "If target K is three instead, that same capacity-two result successfully reaches the target.",
+      "zh": "如果目标 K 改为三，那么同一个容量为二的结果就成功达到目标。",
+      "start": 17.4342107,
+      "end": 24.026316
+    }
+  ],
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 62263158,
+      "text": "Without a capacity limit, target K of two produces the same partition and cutsize three."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 62763158,
+      "duration": 49605263,
+      "text": "With capacity two, the result has three clusters and cutsize eight."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 112368422,
+      "duration": 61973684,
+      "text": "The difference of five comes exactly from A to C and B to C becoming cross-cluster edges."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 174342107,
+      "duration": 65921053,
+      "text": "If target K is three instead, that same capacity-two result successfully reaches the target."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 2
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: English,DejaVu Sans,24,&H00FFFFFF,&H00FFFFFF,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,68,1
+Style: Chinese,Noto Sans CJK SC,32,&H00E7EEEE,&H00E7EEEE,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,22,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:04.54,English,,0,0,0,,{\an5\pos(640,628)}Affinity measures how strongly two current clusters are connected.
+Dialogue: 0,0:00:00.10,0:00:04.54,Chinese,,0,0,0,,{\an5\pos(640,677)}亲和度衡量当前两个簇之间的连接强度。
+Dialogue: 0,0:00:04.54,0:00:09.11,English,,0,0,0,,{\an5\pos(640,628)}Add every original edge weight that connects one cluster to the other.
+Dialogue: 0,0:00:04.54,0:00:09.11,Chinese,,0,0,0,,{\an5\pos(640,677)}将连接这两个簇的所有原始边权相加。
+Dialogue: 0,0:00:09.11,0:00:15.53,English,,0,0,0,,{\an5\pos(640,628)}Cutsize adds all edges whose endpoints belong to different clusters, counting each edge once.
+Dialogue: 0,0:00:09.11,0:00:15.53,Chinese,,0,0,0,,{\an5\pos(640,677)}割边权重总和统计端点位于不同簇的全部边，每条边只计一次。
+Dialogue: 0,0:00:15.53,0:00:20.07,English,,0,0,0,,{\an5\pos(640,628)}When two clusters merge, their connecting edges become internal.
+Dialogue: 0,0:00:15.53,0:00:20.07,Chinese,,0,0,0,,{\an5\pos(640,677)}两个簇合并后，它们之间的边就变成簇内边。
+Dialogue: 0,0:00:20.07,0:00:26.05,English,,0,0,0,,{\an5\pos(640,628)}So cutsize falls by exactly their affinity; no other partition boundary changes.
+Dialogue: 0,0:00:20.07,0:00:26.05,Chinese,,0,0,0,,{\an5\pos(640,677)}因此割边权重总和恰好减少两簇的亲和度，其他分组边界不变。

@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 2
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: English,DejaVu Sans,24,&H00FFFFFF,&H00FFFFFF,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,68,1
+Style: Chinese,Noto Sans CJK SC,32,&H00E7EEEE,&H00E7EEEE,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,22,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:04.11,English,,0,0,0,,{\an5\pos(640,628)}Target K is the desired number of clusters at the end.
+Dialogue: 0,0:00:00.10,0:00:04.11,Chinese,,0,0,0,,{\an5\pos(640,677)}目标 K 表示最终期望得到的簇数。
+Dialogue: 0,0:00:04.11,0:00:09.03,English,,0,0,0,,{\an5\pos(640,628)}Capacity is a hard upper limit on the total size inside each cluster.
+Dialogue: 0,0:00:04.11,0:00:09.03,Chinese,,0,0,0,,{\an5\pos(640,677)}容量是每个簇内总大小不可超过的上限。
+Dialogue: 0,0:00:09.03,0:00:15.14,English,,0,0,0,,{\an5\pos(640,628)}With capacity two, two unit-size cells fit together, but a third cell does not.
+Dialogue: 0,0:00:09.03,0:00:15.14,Chinese,,0,0,0,,{\an5\pos(640,677)}容量为二时，两个大小为一的单元可以合并，但不能再加入第三个。
+Dialogue: 0,0:00:15.14,0:00:19.51,English,,0,0,0,,{\an5\pos(640,628)}A small cutsize does not make an oversized cluster legal.
+Dialogue: 0,0:00:15.14,0:00:19.51,Chinese,,0,0,0,,{\an5\pos(640,677)}割边权重总和较小，并不能让超容量的簇变得合法。
+Dialogue: 0,0:00:19.51,0:00:25.11,English,,0,0,0,,{\an5\pos(640,628)}We must report whether the algorithm actually reaches K while respecting capacity.
+Dialogue: 0,0:00:19.51,0:00:25.11,Chinese,,0,0,0,,{\an5\pos(640,677)}我们必须报告算法在遵守容量约束的同时，是否真的达到目标 K。

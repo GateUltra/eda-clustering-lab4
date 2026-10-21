@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 2
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: English,DejaVu Sans,24,&H00FFFFFF,&H00FFFFFF,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,68,1
+Style: Chinese,Noto Sans CJK SC,32,&H00E7EEEE,&H00E7EEEE,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,22,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:05.41,English,,0,0,0,,{\an5\pos(640,628)}Now consider a different graph with sizes two, two, one, and one.
+Dialogue: 0,0:00:00.10,0:00:05.41,Chinese,,0,0,0,,{\an5\pos(640,677)}现在看另一个图，四个节点大小分别为二、二、一、一。
+Dialogue: 0,0:00:05.41,0:00:10.39,English,,0,0,0,,{\an5\pos(640,628)}The strongest edge joins C and D, so greedy merges them first.
+Dialogue: 0,0:00:05.41,0:00:10.39,Chinese,,0,0,0,,{\an5\pos(640,677)}最强的边连接 C 与 D，因此贪心算法先合并它们。
+Dialogue: 0,0:00:10.39,0:00:16.63,English,,0,0,0,,{\an5\pos(640,628)}All three remaining clusters have size two, and capacity three blocks every further merge.
+Dialogue: 0,0:00:10.39,0:00:16.63,Chinese,,0,0,0,,{\an5\pos(640,677)}剩下的三个簇大小都为二，容量三使后续任何合并都不合法。
+Dialogue: 0,0:00:16.63,0:00:22.87,English,,0,0,0,,{\an5\pos(640,628)}Yet pairing node A with C, and node B with D, gives two legal clusters of size three.
+Dialogue: 0,0:00:16.63,0:00:22.87,Chinese,,0,0,0,,{\an5\pos(640,677)}但 A 与 C、B 与 D 分别成簇，就能得到两个大小为三的合法簇。
+Dialogue: 0,0:00:22.87,0:00:30.00,English,,0,0,0,,{\an5\pos(640,628)}Here the target is feasible; the greedy history, not total available capacity, causes the failure.
+Dialogue: 0,0:00:22.87,0:00:30.00,Chinese,,0,0,0,,{\an5\pos(640,677)}这里目标是可行的；失败源于贪心选择的历史，而不是总容量不足。

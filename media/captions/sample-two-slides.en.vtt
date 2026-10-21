@@ -1,0 +1,38 @@
+WEBVTT
+
+1
+00:00:00.100 --> 00:00:04.855
+How can we group connected cells without making any cluster too large?
+
+2
+00:00:04.855 --> 00:00:10.395
+This lesson explains size-constrained agglomerative clustering through one small graph.
+
+3
+00:00:10.395 --> 00:00:16.526
+We will follow merges, measure cutsize, and explain why the algorithm can stop early.
+
+4
+00:00:16.526 --> 00:00:21.868
+By the end, you should be able to reproduce the result and report its limitations.
+
+5
+00:00:22.500 --> 00:00:27.005
+In this simplified E D A model, each node represents a cell.
+
+6
+00:00:27.005 --> 00:00:32.453
+An edge weight describes connectivity: a larger weight means a stronger connection.
+
+7
+00:00:32.453 --> 00:00:38.045
+A node also has a size, which can represent cell area rather than node count.
+
+8
+00:00:38.045 --> 00:00:43.584
+Here every node has size one, so cluster size equals its number of members.
+
+9
+00:00:43.584 --> 00:00:50.032
+Real netlists may use hypergraphs; this lab deliberately uses an undirected weighted graph.
+

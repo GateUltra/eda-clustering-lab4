@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 2
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: English,DejaVu Sans,24,&H00FFFFFF,&H00FFFFFF,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,68,1
+Style: Chinese,Noto Sans CJK SC,32,&H00E7EEEE,&H00E7EEEE,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,22,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:06.62,English,,0,0,0,,{\an5\pos(640,628)}For a small teaching graph, recomputing affinities from original edges is a clear implementation.
+Dialogue: 0,0:00:00.10,0:00:06.62,Chinese,,0,0,0,,{\an5\pos(640,677)}对于教学小图，从原始边重新计算亲和度是一种清晰的实现方式。
+Dialogue: 0,0:00:06.62,0:00:12.41,English,,0,0,0,,{\an5\pos(640,628)}After each merge, update membership and sizes, then rebuild the candidate list.
+Dialogue: 0,0:00:06.62,0:00:12.41,Chinese,,0,0,0,,{\an5\pos(640,677)}每次合并后，更新成员关系和大小，再重建候选列表。
+Dialogue: 0,0:00:12.41,0:00:18.59,English,,0,0,0,,{\an5\pos(640,628)}One blocked candidate does not justify stopping; another legal pair may still exist.
+Dialogue: 0,0:00:12.41,0:00:18.59,Chinese,,0,0,0,,{\an5\pos(640,677)}一个候选被容量阻止，并不意味着可以停止；可能还有其他合法簇对。
+Dialogue: 0,0:00:18.59,0:00:23.45,English,,0,0,0,,{\an5\pos(640,628)}Stop at K, or when every positive-affinity candidate is illegal.
+Dialogue: 0,0:00:18.59,0:00:23.45,Chinese,,0,0,0,,{\an5\pos(640,677)}达到 K 时停止，或者在所有正亲和度候选都不合法时停止。
+Dialogue: 0,0:00:23.45,0:00:30.08,English,,0,0,0,,{\an5\pos(640,628)}Our reference rejects invalid sizes and never forces a zero-affinity merge just to reach K.
+Dialogue: 0,0:00:23.45,0:00:30.08,Chinese,,0,0,0,,{\an5\pos(640,677)}参考实现拒绝无效大小，也不会为了凑够 K 而强行合并零亲和度簇对。

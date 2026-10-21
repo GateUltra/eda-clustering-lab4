@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 2
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: English,DejaVu Sans,24,&H00FFFFFF,&H00FFFFFF,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,68,1
+Style: Chinese,Noto Sans CJK SC,32,&H00E7EEEE,&H00E7EEEE,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,22,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:03.87,English,,0,0,0,,{\an5\pos(640,628)}Now set target K to two and capacity to two.
+Dialogue: 0,0:00:00.10,0:00:03.87,Chinese,,0,0,0,,{\an5\pos(640,677)}现在将目标 K 设为二，容量也设为二。
+Dialogue: 0,0:00:03.87,0:00:09.70,English,,0,0,0,,{\an5\pos(640,628)}Although the A B cluster connects strongly to C, combining them would create size three.
+Dialogue: 0,0:00:03.87,0:00:09.70,Chinese,,0,0,0,,{\an5\pos(640,677)}虽然 A、B 所在簇与 C 的连接很强，合并后大小却会达到三。
+Dialogue: 0,0:00:09.70,0:00:14.54,English,,0,0,0,,{\an5\pos(640,628)}That merge is illegal, so we skip it and consider the next candidate.
+Dialogue: 0,0:00:09.70,0:00:14.54,Chinese,,0,0,0,,{\an5\pos(640,677)}这次合并不合法，因此跳过它，继续检查下一个候选。
+Dialogue: 0,0:00:14.54,0:00:19.79,English,,0,0,0,,{\an5\pos(640,628)}D and E can merge legally, reducing cutsize by another five to eight.
+Dialogue: 0,0:00:14.54,0:00:19.79,Chinese,,0,0,0,,{\an5\pos(640,677)}D 与 E 可以合法合并，割边权重总和再减少五，变为八。
+Dialogue: 0,0:00:19.79,0:00:25.83,English,,0,0,0,,{\an5\pos(640,628)}Nodes A and B form one cluster, C remains alone, and nodes D and E form another.
+Dialogue: 0,0:00:19.79,0:00:25.83,Chinese,,0,0,0,,{\an5\pos(640,677)}A 与 B 组成一簇，C 单独成簇，D 与 E 组成另一簇。

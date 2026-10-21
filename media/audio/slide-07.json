@@ -1,0 +1,69 @@
+{
+  "voice": "en-US-JennyNeural",
+  "rate": "-5%",
+  "text": "Contraction replaces A and B by one current cluster while retaining both original members. The new connection to C combines the old A to C and B to C edges. Their weights are one and four, giving affinity five. Do not keep only the largest edge, and do not reuse a stale candidate ranking. The next choice must use these updated affinities and the updated cluster sizes.",
+  "cues": [
+    {
+      "en": "Contraction replaces A and B by one current cluster while retaining both original members.",
+      "zh": "收缩操作将 A 和 B 替换为一个当前簇，同时保留两个原始成员。",
+      "start": 0.1,
+      "end": 6.1947369
+    },
+    {
+      "en": "The new connection to C combines the old A to C and B to C edges.",
+      "zh": "新簇与 C 的连接需要合并原来的 A 到 C、B 到 C 两条边。",
+      "start": 6.1447369,
+      "end": 11.0657895
+    },
+    {
+      "en": "Their weights are one and four, giving affinity five.",
+      "zh": "两条边的权重分别为一和四，因此亲和度为五。",
+      "start": 11.0657896,
+      "end": 15.1052633
+    },
+    {
+      "en": "Do not keep only the largest edge, and do not reuse a stale candidate ranking.",
+      "zh": "不能只保留最大的那条边，也不能继续使用过时的候选排序。",
+      "start": 15.1052633,
+      "end": 20.4473686
+    },
+    {
+      "en": "The next choice must use these updated affinities and the updated cluster sizes.",
+      "zh": "下一次选择必须使用更新后的亲和度与簇大小。",
+      "start": 20.4473686,
+      "end": 26.0000002
+    }
+  ],
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 60947369,
+      "text": "Contraction replaces A and B by one current cluster while retaining both original members."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 61447369,
+      "duration": 49210526,
+      "text": "The new connection to C combines the old A to C and B to C edges."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 110657896,
+      "duration": 40394737,
+      "text": "Their weights are one and four, giving affinity five."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 151052633,
+      "duration": 53421053,
+      "text": "Do not keep only the largest edge, and do not reuse a stale candidate ranking."
+    },
+    {
+      "type": "SentenceBoundary",
+      "offset": 204473686,
+      "duration": 55526316,
+      "text": "The next choice must use these updated affinities and the updated cluster sizes."
+    }
+  ]
+}

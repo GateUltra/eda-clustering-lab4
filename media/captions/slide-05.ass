@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 2
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: English,DejaVu Sans,24,&H00FFFFFF,&H00FFFFFF,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,68,1
+Style: Chinese,Noto Sans CJK SC,32,&H00E7EEEE,&H00E7EEEE,&H00102B3B,&H00102B3B,0,0,0,0,100,100,0,0,1,0,0,2,45,45,22,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:05.33,English,,0,0,0,,{\an5\pos(640,628)}Start with one cluster per node, then consider pairs with positive affinity.
+Dialogue: 0,0:00:00.10,0:00:05.33,Chinese,,0,0,0,,{\an5\pos(640,677)}从每个节点各自成簇开始，只考虑亲和度为正的簇对。
+Dialogue: 0,0:00:05.33,0:00:10.75,English,,0,0,0,,{\an5\pos(640,628)}Discard pairs that would exceed capacity, and choose the strongest remaining pair.
+Dialogue: 0,0:00:05.33,0:00:10.75,Chinese,,0,0,0,,{\an5\pos(640,677)}排除合并后超容量的簇对，再选择剩余候选中亲和度最高的。
+Dialogue: 0,0:00:10.75,0:00:17.42,English,,0,0,0,,{\an5\pos(640,628)}For ties, sort the members within each cluster, then order the two clusters lexicographically.
+Dialogue: 0,0:00:10.75,0:00:17.42,Chinese,,0,0,0,,{\an5\pos(640,677)}出现平局时，先对每个簇的成员标签排序，再按字典序排列簇对。
+Dialogue: 0,0:00:17.42,0:00:22.82,English,,0,0,0,,{\an5\pos(640,628)}Compare the first member list, then the second; the smallest pair wins.
+Dialogue: 0,0:00:17.42,0:00:22.82,Chinese,,0,0,0,,{\an5\pos(640,677)}先比较第一个成员列表，再比较第二个，字典序最小的簇对优先。
+Dialogue: 0,0:00:22.82,0:00:29.09,English,,0,0,0,,{\an5\pos(640,628)}Our slides and code share this rule; upstream instead uses synthetic cluster identifiers.
+Dialogue: 0,0:00:22.82,0:00:29.09,Chinese,,0,0,0,,{\an5\pos(640,677)}本课幻灯片与两种实现统一使用这条规则；上游则使用生成的簇编号。

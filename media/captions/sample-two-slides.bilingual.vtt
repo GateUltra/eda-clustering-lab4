@@ -1,0 +1,47 @@
+WEBVTT
+
+1
+00:00:00.100 --> 00:00:04.855
+How can we group connected cells without making any cluster too large?
+如何把连接紧密的电路单元分组，同时避免任何簇过大？
+
+2
+00:00:04.855 --> 00:00:10.395
+This lesson explains size-constrained agglomerative clustering through one small graph.
+本课通过一个小图，讲解带大小约束的凝聚式聚类。
+
+3
+00:00:10.395 --> 00:00:16.526
+We will follow merges, measure cutsize, and explain why the algorithm can stop early.
+我们将跟踪合并过程、计算割边权重总和，并解释算法为何有时提前停止。
+
+4
+00:00:16.526 --> 00:00:21.868
+By the end, you should be able to reproduce the result and report its limitations.
+学完后，你应能复现结果，并说明它的局限。
+
+5
+00:00:22.500 --> 00:00:27.005
+In this simplified E D A model, each node represents a cell.
+在这个简化的电子设计自动化模型中，每个节点代表一个电路单元。
+
+6
+00:00:27.005 --> 00:00:32.453
+An edge weight describes connectivity: a larger weight means a stronger connection.
+边权表示连接强度：权重越大，连接越强。
+
+7
+00:00:32.453 --> 00:00:38.045
+A node also has a size, which can represent cell area rather than node count.
+节点还有大小属性，可以代表单元面积，而不只是节点个数。
+
+8
+00:00:38.045 --> 00:00:43.584
+Here every node has size one, so cluster size equals its number of members.
+这里每个节点的大小都是一，因此簇大小等于成员个数。
+
+9
+00:00:43.584 --> 00:00:50.032
+Real netlists may use hypergraphs; this lab deliberately uses an undirected weighted graph.
+真实网表可能使用超图；本实验特意采用无向加权图。
+
