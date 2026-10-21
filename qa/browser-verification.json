@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "project_subpath": "/lab04-course/",
+  "settings": 4,
+  "counterexamples": 2,
+  "prediction": true,
+  "calculation_challenges": "10/10 automated test, not user progress",
+  "quiz": "6/6 automated test, not user progress",
+  "video_metadata": {
+    "duration": 439.434667,
+    "width": 1280,
+    "height": 720,
+    "error": null
+  },
+  "video_playback": true,
+  "video_seek_middle_end": true,
+  "mobile_no_horizontal_overflow": true,
+  "page_errors": []
+}

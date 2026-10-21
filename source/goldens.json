@@ -1,0 +1,1601 @@
+[
+  {
+    "case": "original",
+    "result": {
+      "clusters": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "C"
+        ],
+        [
+          "D",
+          "E"
+        ]
+      ],
+      "actual_count": 3,
+      "cutsize": 8,
+      "sizes": [
+        2,
+        1,
+        2
+      ],
+      "capacity_compliant": true,
+      "target_reached": false,
+      "target_k": 2,
+      "capacity": 2,
+      "stop_reason": "no_legal_positive_merge",
+      "steps": [
+        {
+          "clusters": [
+            [
+              "A"
+            ],
+            [
+              "B"
+            ],
+            [
+              "C"
+            ],
+            [
+              "D"
+            ],
+            [
+              "E"
+            ]
+          ],
+          "actual_count": 5,
+          "cutsize": 18,
+          "sizes": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "capacity_compliant": true,
+          "target_reached": false,
+          "candidates": [
+            {
+              "left": [
+                "A"
+              ],
+              "right": [
+                "B"
+              ],
+              "affinity": 5,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "D"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 5,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "B"
+              ],
+              "right": [
+                "C"
+              ],
+              "affinity": 4,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "D"
+              ],
+              "affinity": 2,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "A"
+              ],
+              "right": [
+                "C"
+              ],
+              "affinity": 1,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 1,
+              "size": 2,
+              "legal": true
+            }
+          ],
+          "merge": null
+        },
+        {
+          "clusters": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C"
+            ],
+            [
+              "D"
+            ],
+            [
+              "E"
+            ]
+          ],
+          "actual_count": 4,
+          "cutsize": 13,
+          "sizes": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "capacity_compliant": true,
+          "target_reached": false,
+          "candidates": [
+            {
+              "left": [
+                "A",
+                "B"
+              ],
+              "right": [
+                "C"
+              ],
+              "affinity": 5,
+              "size": 3,
+              "legal": false
+            },
+            {
+              "left": [
+                "D"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 5,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "D"
+              ],
+              "affinity": 2,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 1,
+              "size": 2,
+              "legal": true
+            }
+          ],
+          "merge": {
+            "left": [
+              "A"
+            ],
+            "right": [
+              "B"
+            ],
+            "affinity": 5,
+            "size": 2,
+            "legal": true
+          }
+        },
+        {
+          "clusters": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C"
+            ],
+            [
+              "D",
+              "E"
+            ]
+          ],
+          "actual_count": 3,
+          "cutsize": 8,
+          "sizes": [
+            2,
+            1,
+            2
+          ],
+          "capacity_compliant": true,
+          "target_reached": false,
+          "candidates": [
+            {
+              "left": [
+                "A",
+                "B"
+              ],
+              "right": [
+                "C"
+              ],
+              "affinity": 5,
+              "size": 3,
+              "legal": false
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "D",
+                "E"
+              ],
+              "affinity": 3,
+              "size": 3,
+              "legal": false
+            }
+          ],
+          "merge": {
+            "left": [
+              "D"
+            ],
+            "right": [
+              "E"
+            ],
+            "affinity": 5,
+            "size": 2,
+            "legal": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "case": "original",
+    "result": {
+      "clusters": [
+        [
+          "A",
+          "B",
+          "C"
+        ],
+        [
+          "D",
+          "E"
+        ]
+      ],
+      "actual_count": 2,
+      "cutsize": 3,
+      "sizes": [
+        3,
+        2
+      ],
+      "capacity_compliant": true,
+      "target_reached": true,
+      "target_k": 2,
+      "capacity": 3,
+      "stop_reason": "target_reached",
+      "steps": [
+        {
+          "clusters": [
+            [
+              "A"
+            ],
+            [
+              "B"
+            ],
+            [
+              "C"
+            ],
+            [
+              "D"
+            ],
+            [
+              "E"
+            ]
+          ],
+          "actual_count": 5,
+          "cutsize": 18,
+          "sizes": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "capacity_compliant": true,
+          "target_reached": false,
+          "candidates": [
+            {
+              "left": [
+                "A"
+              ],
+              "right": [
+                "B"
+              ],
+              "affinity": 5,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "D"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 5,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "B"
+              ],
+              "right": [
+                "C"
+              ],
+              "affinity": 4,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "D"
+              ],
+              "affinity": 2,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "A"
+              ],
+              "right": [
+                "C"
+              ],
+              "affinity": 1,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 1,
+              "size": 2,
+              "legal": true
+            }
+          ],
+          "merge": null
+        },
+        {
+          "clusters": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C"
+            ],
+            [
+              "D"
+            ],
+            [
+              "E"
+            ]
+          ],
+          "actual_count": 4,
+          "cutsize": 13,
+          "sizes": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "capacity_compliant": true,
+          "target_reached": false,
+          "candidates": [
+            {
+              "left": [
+                "A",
+                "B"
+              ],
+              "right": [
+                "C"
+              ],
+              "affinity": 5,
+              "size": 3,
+              "legal": true
+            },
+            {
+              "left": [
+                "D"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 5,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "D"
+              ],
+              "affinity": 2,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 1,
+              "size": 2,
+              "legal": true
+            }
+          ],
+          "merge": {
+            "left": [
+              "A"
+            ],
+            "right": [
+              "B"
+            ],
+            "affinity": 5,
+            "size": 2,
+            "legal": true
+          }
+        },
+        {
+          "clusters": [
+            [
+              "A",
+              "B",
+              "C"
+            ],
+            [
+              "D"
+            ],
+            [
+              "E"
+            ]
+          ],
+          "actual_count": 3,
+          "cutsize": 8,
+          "sizes": [
+            3,
+            1,
+            1
+          ],
+          "capacity_compliant": true,
+          "target_reached": false,
+          "candidates": [
+            {
+              "left": [
+                "D"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 5,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "A",
+                "B",
+                "C"
+              ],
+              "right": [
+                "D"
+              ],
+              "affinity": 2,
+              "size": 4,
+              "legal": false
+            },
+            {
+              "left": [
+                "A",
+                "B",
+                "C"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 1,
+              "size": 4,
+              "legal": false
+            }
+          ],
+          "merge": {
+            "left": [
+              "A",
+              "B"
+            ],
+            "right": [
+              "C"
+            ],
+            "affinity": 5,
+            "size": 3,
+            "legal": true
+          }
+        },
+        {
+          "clusters": [
+            [
+              "A",
+              "B",
+              "C"
+            ],
+            [
+              "D",
+              "E"
+            ]
+          ],
+          "actual_count": 2,
+          "cutsize": 3,
+          "sizes": [
+            3,
+            2
+          ],
+          "capacity_compliant": true,
+          "target_reached": true,
+          "candidates": [
+            {
+              "left": [
+                "A",
+                "B",
+                "C"
+              ],
+              "right": [
+                "D",
+                "E"
+              ],
+              "affinity": 3,
+              "size": 5,
+              "legal": false
+            }
+          ],
+          "merge": {
+            "left": [
+              "D"
+            ],
+            "right": [
+              "E"
+            ],
+            "affinity": 5,
+            "size": 2,
+            "legal": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "case": "original",
+    "result": {
+      "clusters": [
+        [
+          "A",
+          "B",
+          "C"
+        ],
+        [
+          "D",
+          "E"
+        ]
+      ],
+      "actual_count": 2,
+      "cutsize": 3,
+      "sizes": [
+        3,
+        2
+      ],
+      "capacity_compliant": true,
+      "target_reached": true,
+      "target_k": 2,
+      "capacity": null,
+      "stop_reason": "target_reached",
+      "steps": [
+        {
+          "clusters": [
+            [
+              "A"
+            ],
+            [
+              "B"
+            ],
+            [
+              "C"
+            ],
+            [
+              "D"
+            ],
+            [
+              "E"
+            ]
+          ],
+          "actual_count": 5,
+          "cutsize": 18,
+          "sizes": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "capacity_compliant": true,
+          "target_reached": false,
+          "candidates": [
+            {
+              "left": [
+                "A"
+              ],
+              "right": [
+                "B"
+              ],
+              "affinity": 5,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "D"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 5,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "B"
+              ],
+              "right": [
+                "C"
+              ],
+              "affinity": 4,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "D"
+              ],
+              "affinity": 2,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "A"
+              ],
+              "right": [
+                "C"
+              ],
+              "affinity": 1,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 1,
+              "size": 2,
+              "legal": true
+            }
+          ],
+          "merge": null
+        },
+        {
+          "clusters": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C"
+            ],
+            [
+              "D"
+            ],
+            [
+              "E"
+            ]
+          ],
+          "actual_count": 4,
+          "cutsize": 13,
+          "sizes": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "capacity_compliant": true,
+          "target_reached": false,
+          "candidates": [
+            {
+              "left": [
+                "A",
+                "B"
+              ],
+              "right": [
+                "C"
+              ],
+              "affinity": 5,
+              "size": 3,
+              "legal": true
+            },
+            {
+              "left": [
+                "D"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 5,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "D"
+              ],
+              "affinity": 2,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 1,
+              "size": 2,
+              "legal": true
+            }
+          ],
+          "merge": {
+            "left": [
+              "A"
+            ],
+            "right": [
+              "B"
+            ],
+            "affinity": 5,
+            "size": 2,
+            "legal": true
+          }
+        },
+        {
+          "clusters": [
+            [
+              "A",
+              "B",
+              "C"
+            ],
+            [
+              "D"
+            ],
+            [
+              "E"
+            ]
+          ],
+          "actual_count": 3,
+          "cutsize": 8,
+          "sizes": [
+            3,
+            1,
+            1
+          ],
+          "capacity_compliant": true,
+          "target_reached": false,
+          "candidates": [
+            {
+              "left": [
+                "D"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 5,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "A",
+                "B",
+                "C"
+              ],
+              "right": [
+                "D"
+              ],
+              "affinity": 2,
+              "size": 4,
+              "legal": true
+            },
+            {
+              "left": [
+                "A",
+                "B",
+                "C"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 1,
+              "size": 4,
+              "legal": true
+            }
+          ],
+          "merge": {
+            "left": [
+              "A",
+              "B"
+            ],
+            "right": [
+              "C"
+            ],
+            "affinity": 5,
+            "size": 3,
+            "legal": true
+          }
+        },
+        {
+          "clusters": [
+            [
+              "A",
+              "B",
+              "C"
+            ],
+            [
+              "D",
+              "E"
+            ]
+          ],
+          "actual_count": 2,
+          "cutsize": 3,
+          "sizes": [
+            3,
+            2
+          ],
+          "capacity_compliant": true,
+          "target_reached": true,
+          "candidates": [
+            {
+              "left": [
+                "A",
+                "B",
+                "C"
+              ],
+              "right": [
+                "D",
+                "E"
+              ],
+              "affinity": 3,
+              "size": 5,
+              "legal": true
+            }
+          ],
+          "merge": {
+            "left": [
+              "D"
+            ],
+            "right": [
+              "E"
+            ],
+            "affinity": 5,
+            "size": 2,
+            "legal": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "case": "original",
+    "result": {
+      "clusters": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "C"
+        ],
+        [
+          "D",
+          "E"
+        ]
+      ],
+      "actual_count": 3,
+      "cutsize": 8,
+      "sizes": [
+        2,
+        1,
+        2
+      ],
+      "capacity_compliant": true,
+      "target_reached": true,
+      "target_k": 3,
+      "capacity": 2,
+      "stop_reason": "target_reached",
+      "steps": [
+        {
+          "clusters": [
+            [
+              "A"
+            ],
+            [
+              "B"
+            ],
+            [
+              "C"
+            ],
+            [
+              "D"
+            ],
+            [
+              "E"
+            ]
+          ],
+          "actual_count": 5,
+          "cutsize": 18,
+          "sizes": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "capacity_compliant": true,
+          "target_reached": false,
+          "candidates": [
+            {
+              "left": [
+                "A"
+              ],
+              "right": [
+                "B"
+              ],
+              "affinity": 5,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "D"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 5,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "B"
+              ],
+              "right": [
+                "C"
+              ],
+              "affinity": 4,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "D"
+              ],
+              "affinity": 2,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "A"
+              ],
+              "right": [
+                "C"
+              ],
+              "affinity": 1,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 1,
+              "size": 2,
+              "legal": true
+            }
+          ],
+          "merge": null
+        },
+        {
+          "clusters": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C"
+            ],
+            [
+              "D"
+            ],
+            [
+              "E"
+            ]
+          ],
+          "actual_count": 4,
+          "cutsize": 13,
+          "sizes": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "capacity_compliant": true,
+          "target_reached": false,
+          "candidates": [
+            {
+              "left": [
+                "A",
+                "B"
+              ],
+              "right": [
+                "C"
+              ],
+              "affinity": 5,
+              "size": 3,
+              "legal": false
+            },
+            {
+              "left": [
+                "D"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 5,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "D"
+              ],
+              "affinity": 2,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "E"
+              ],
+              "affinity": 1,
+              "size": 2,
+              "legal": true
+            }
+          ],
+          "merge": {
+            "left": [
+              "A"
+            ],
+            "right": [
+              "B"
+            ],
+            "affinity": 5,
+            "size": 2,
+            "legal": true
+          }
+        },
+        {
+          "clusters": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C"
+            ],
+            [
+              "D",
+              "E"
+            ]
+          ],
+          "actual_count": 3,
+          "cutsize": 8,
+          "sizes": [
+            2,
+            1,
+            2
+          ],
+          "capacity_compliant": true,
+          "target_reached": true,
+          "candidates": [
+            {
+              "left": [
+                "A",
+                "B"
+              ],
+              "right": [
+                "C"
+              ],
+              "affinity": 5,
+              "size": 3,
+              "legal": false
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "D",
+                "E"
+              ],
+              "affinity": 3,
+              "size": 3,
+              "legal": false
+            }
+          ],
+          "merge": {
+            "left": [
+              "D"
+            ],
+            "right": [
+              "E"
+            ],
+            "affinity": 5,
+            "size": 2,
+            "legal": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "case": "greedy_trap",
+    "result": {
+      "clusters": [
+        [
+          "A"
+        ],
+        [
+          "B"
+        ],
+        [
+          "C",
+          "D"
+        ]
+      ],
+      "actual_count": 3,
+      "cutsize": 8,
+      "sizes": [
+        2,
+        2,
+        2
+      ],
+      "capacity_compliant": true,
+      "target_reached": false,
+      "target_k": 2,
+      "capacity": 3,
+      "stop_reason": "no_legal_positive_merge",
+      "steps": [
+        {
+          "clusters": [
+            [
+              "A"
+            ],
+            [
+              "B"
+            ],
+            [
+              "C"
+            ],
+            [
+              "D"
+            ]
+          ],
+          "actual_count": 4,
+          "cutsize": 18,
+          "sizes": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "capacity_compliant": true,
+          "target_reached": false,
+          "candidates": [
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "D"
+              ],
+              "affinity": 10,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "A"
+              ],
+              "right": [
+                "C"
+              ],
+              "affinity": 4,
+              "size": 3,
+              "legal": true
+            },
+            {
+              "left": [
+                "B"
+              ],
+              "right": [
+                "D"
+              ],
+              "affinity": 4,
+              "size": 3,
+              "legal": true
+            }
+          ],
+          "merge": null
+        },
+        {
+          "clusters": [
+            [
+              "A"
+            ],
+            [
+              "B"
+            ],
+            [
+              "C",
+              "D"
+            ]
+          ],
+          "actual_count": 3,
+          "cutsize": 8,
+          "sizes": [
+            2,
+            2,
+            2
+          ],
+          "capacity_compliant": true,
+          "target_reached": false,
+          "candidates": [
+            {
+              "left": [
+                "A"
+              ],
+              "right": [
+                "C",
+                "D"
+              ],
+              "affinity": 4,
+              "size": 4,
+              "legal": false
+            },
+            {
+              "left": [
+                "B"
+              ],
+              "right": [
+                "C",
+                "D"
+              ],
+              "affinity": 4,
+              "size": 4,
+              "legal": false
+            }
+          ],
+          "merge": {
+            "left": [
+              "C"
+            ],
+            "right": [
+              "D"
+            ],
+            "affinity": 10,
+            "size": 2,
+            "legal": true
+          }
+        }
+      ]
+    },
+    "optimal_cutsize_at_k": 10
+  },
+  {
+    "case": "suboptimal",
+    "result": {
+      "clusters": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "C",
+          "D"
+        ]
+      ],
+      "actual_count": 2,
+      "cutsize": 18,
+      "sizes": [
+        2,
+        2
+      ],
+      "capacity_compliant": true,
+      "target_reached": true,
+      "target_k": 2,
+      "capacity": 2,
+      "stop_reason": "target_reached",
+      "steps": [
+        {
+          "clusters": [
+            [
+              "A"
+            ],
+            [
+              "B"
+            ],
+            [
+              "C"
+            ],
+            [
+              "D"
+            ]
+          ],
+          "actual_count": 4,
+          "cutsize": 29,
+          "sizes": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "capacity_compliant": true,
+          "target_reached": false,
+          "candidates": [
+            {
+              "left": [
+                "A"
+              ],
+              "right": [
+                "B"
+              ],
+              "affinity": 10,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "A"
+              ],
+              "right": [
+                "C"
+              ],
+              "affinity": 9,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "B"
+              ],
+              "right": [
+                "D"
+              ],
+              "affinity": 9,
+              "size": 2,
+              "legal": true
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "D"
+              ],
+              "affinity": 1,
+              "size": 2,
+              "legal": true
+            }
+          ],
+          "merge": null
+        },
+        {
+          "clusters": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C"
+            ],
+            [
+              "D"
+            ]
+          ],
+          "actual_count": 3,
+          "cutsize": 19,
+          "sizes": [
+            2,
+            1,
+            1
+          ],
+          "capacity_compliant": true,
+          "target_reached": false,
+          "candidates": [
+            {
+              "left": [
+                "A",
+                "B"
+              ],
+              "right": [
+                "C"
+              ],
+              "affinity": 9,
+              "size": 3,
+              "legal": false
+            },
+            {
+              "left": [
+                "A",
+                "B"
+              ],
+              "right": [
+                "D"
+              ],
+              "affinity": 9,
+              "size": 3,
+              "legal": false
+            },
+            {
+              "left": [
+                "C"
+              ],
+              "right": [
+                "D"
+              ],
+              "affinity": 1,
+              "size": 2,
+              "legal": true
+            }
+          ],
+          "merge": {
+            "left": [
+              "A"
+            ],
+            "right": [
+              "B"
+            ],
+            "affinity": 10,
+            "size": 2,
+            "legal": true
+          }
+        },
+        {
+          "clusters": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C",
+              "D"
+            ]
+          ],
+          "actual_count": 2,
+          "cutsize": 18,
+          "sizes": [
+            2,
+            2
+          ],
+          "capacity_compliant": true,
+          "target_reached": true,
+          "candidates": [
+            {
+              "left": [
+                "A",
+                "B"
+              ],
+              "right": [
+                "C",
+                "D"
+              ],
+              "affinity": 18,
+              "size": 4,
+              "legal": false
+            }
+          ],
+          "merge": {
+            "left": [
+              "C"
+            ],
+            "right": [
+              "D"
+            ],
+            "affinity": 1,
+            "size": 2,
+            "legal": true
+          }
+        }
+      ]
+    },
+    "optimal_cutsize_at_k": 11
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "python_js_cases": 47,
+  "oracle": "exhaustive set partitions",
+  "counterexamples": {
+    "infeasible_target": true,
+    "feasible_greedy_trap": true,
+    "suboptimal_greedy": true
+  }
+}

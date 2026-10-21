@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "duration_seconds": 439.4,
+  "audio_duration_seconds": 439.434667,
+  "slides": 16,
+  "bilingual_cues": 78,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "full_decode": true,
+  "no_caption_overlap": true,
+  "chinese_glyph_coverage": true,
+  "slide_frame_checks": [
+    {
+      "slide": 1,
+      "time": 11.2,
+      "mean_absolute_pixel_error": 2.5548
+    },
+    {
+      "slide": 2,
+      "time": 36.48,
+      "mean_absolute_pixel_error": 2.5742
+    },
+    {
+      "slide": 3,
+      "time": 63.38,
+      "mean_absolute_pixel_error": 2.7691
+    },
+    {
+      "slide": 4,
+      "time": 89.5,
+      "mean_absolute_pixel_error": 2.7524
+    },
+    {
+      "slide": 5,
+      "time": 117.62,
+      "mean_absolute_pixel_error": 2.9508
+    },
+    {
+      "slide": 6,
+      "time": 145.5,
+      "mean_absolute_pixel_error": 2.654
+    },
+    {
+      "slide": 7,
+      "time": 171.82,
+      "mean_absolute_pixel_error": 2.6695
+    },
+    {
+      "slide": 8,
+      "time": 198.26,
+      "mean_absolute_pixel_error": 2.7155
+    },
+    {
+      "slide": 9,
+      "time": 225.58,
+      "mean_absolute_pixel_error": 2.9291
+    },
+    {
+      "slide": 10,
+      "time": 253.98,
+      "mean_absolute_pixel_error": 2.7017
+    },
+    {
+      "slide": 11,
+      "time": 280.52,
+      "mean_absolute_pixel_error": 2.5733
+    },
+    {
+      "slide": 12,
+      "time": 308.1,
+      "mean_absolute_pixel_error": 3.0629
+    },
+    {
+      "slide": 13,
+      "time": 338.68,
+      "mean_absolute_pixel_error": 2.7203
+    },
+    {
+      "slide": 14,
+      "time": 367.34,
+      "mean_absolute_pixel_error": 2.9104
+    },
+    {
+      "slide": 15,
+      "time": 394.92,
+      "mean_absolute_pixel_error": 2.7956
+    },
+    {
+      "slide": 16,
+      "time": 424.26,
+      "mean_absolute_pixel_error": 2.8634
+    },
+    {
+      "slide": 1,
+      "time": 0.2,
+      "mean_absolute_pixel_error": 2.6308
+    },
+    {
+      "slide": 8,
+      "time": 211.32,
+      "mean_absolute_pixel_error": 2.7155
+    },
+    {
+      "slide": 9,
+      "time": 211.56,
+      "mean_absolute_pixel_error": 3.0222
+    },
+    {
+      "slide": 16,
+      "time": 439.28,
+      "mean_absolute_pixel_error": 2.9099
+    }
+  ]
+}

@@ -1,0 +1,472 @@
+[
+  {
+    "slide": 1,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.8,
+        "text": " How can we group connected cells without making any cluster too large?"
+      },
+      {
+        "start": 4.8,
+        "end": 10.3,
+        "text": " This lesson explains size constrained agglomerative clustering through one small graph."
+      },
+      {
+        "start": 10.3,
+        "end": 16.5,
+        "text": " We will follow merges, measure cut size, and explain why the algorithm can stop early."
+      },
+      {
+        "start": 16.5,
+        "end": 21.7,
+        "text": " By the end, you should be able to reproduce the result and report its limitations."
+      }
+    ]
+  },
+  {
+    "slide": 2,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.56,
+        "text": " In this simplified EDA model, each node represents a cell."
+      },
+      {
+        "start": 4.56,
+        "end": 10.0,
+        "text": " An edge weight describes connectivity, a larger weight means a stronger connection."
+      },
+      {
+        "start": 10.0,
+        "end": 15.6,
+        "text": " A node also has a size, which can represent cell area rather than node count."
+      },
+      {
+        "start": 15.6,
+        "end": 21.2,
+        "text": " Here every node has size 1, so cluster size equals its number of members."
+      },
+      {
+        "start": 21.2,
+        "end": 27.2,
+        "text": " Real netlists may use hypergraphs, this lab deliberately uses an undirected weighted graph."
+      }
+    ]
+  },
+  {
+    "slide": 3,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.0,
+        "text": " Target K is the desired number of clusters at the end."
+      },
+      {
+        "start": 4.0,
+        "end": 9.0,
+        "text": " Capacity is a hard upper limit on the total size inside each cluster."
+      },
+      {
+        "start": 9.0,
+        "end": 15.0,
+        "text": " With Capacity 2, two unit size cells fit together, but a third cell does not."
+      },
+      {
+        "start": 15.0,
+        "end": 19.0,
+        "text": " A small cut size does not make an oversized cluster legal."
+      },
+      {
+        "start": 19.0,
+        "end": 25.0,
+        "text": " We must report whether the algorithm actually reaches K while respecting Capacity."
+      }
+    ]
+  },
+  {
+    "slide": 4,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.0,
+        "text": " Affinity measures how strongly two current clusters are connected."
+      },
+      {
+        "start": 4.5,
+        "end": 8.5,
+        "text": " Add every original edge weight that connects one cluster to the other."
+      },
+      {
+        "start": 9.0,
+        "end": 15.0,
+        "text": " CutSize adds all edges whose endpoints belong to different clusters, counting each edge once."
+      },
+      {
+        "start": 15.5,
+        "end": 19.5,
+        "text": " When two clusters merge, their connecting edges become internal."
+      },
+      {
+        "start": 20.0,
+        "end": 25.5,
+        "text": " So cutSize falls by exactly their affinity, no other partition boundary changes."
+      }
+    ]
+  },
+  {
+    "slide": 5,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "text": " Start with one cluster per node, then consider pairs with positive affinity."
+      },
+      {
+        "start": 5.0,
+        "end": 10.0,
+        "text": " Discard pairs that would exceed capacity, and choose the strongest remaining pair."
+      },
+      {
+        "start": 10.0,
+        "end": 17.0,
+        "text": " For ties, sort the members within each cluster, then order the two clusters lexicographically."
+      },
+      {
+        "start": 17.0,
+        "end": 22.0,
+        "text": " Compare the first member list, then the second, the smallest pair wins."
+      },
+      {
+        "start": 22.0,
+        "end": 29.0,
+        "text": " Our slides and code share this rule, upstream instead uses synthetic cluster identifiers."
+      }
+    ]
+  },
+  {
+    "slide": 6,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.0,
+        "text": " Initially, all five nodes are separate, so every edge crosses a cluster boundary."
+      },
+      {
+        "start": 6.0,
+        "end": 10.0,
+        "text": " The six edge weights add to 18, which is our initial cut size."
+      },
+      {
+        "start": 10.0,
+        "end": 15.0,
+        "text": " Nodes A and B, and nodes D and E, each have affinity 5."
+      },
+      {
+        "start": 15.0,
+        "end": 20.0,
+        "text": " Our tie break first merges nodes A and B, with combined size 2."
+      },
+      {
+        "start": 20.0,
+        "end": 25.0,
+        "text": " Their edge becomes internal, reducing cut size from 18 to 13."
+      }
+    ]
+  },
+  {
+    "slide": 7,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.0,
+        "text": " Contraction replaces A and B by one current cluster while retaining both original members."
+      },
+      {
+        "start": 6.0,
+        "end": 11.0,
+        "text": " The new connection to C combines the old A to C and B to C edges."
+      },
+      {
+        "start": 11.0,
+        "end": 15.0,
+        "text": " Their weights are 1 and 4, giving affinity 5."
+      },
+      {
+        "start": 15.0,
+        "end": 20.0,
+        "text": " Do not keep only the largest edge and do not reuse a stale candidate ranking."
+      },
+      {
+        "start": 20.0,
+        "end": 26.0,
+        "text": " The next choice must use these updated affinities and the updated cluster sizes."
+      }
+    ]
+  },
+  {
+    "slide": 8,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.92,
+        "text": " Now set target K to 2 and capacity to 2."
+      },
+      {
+        "start": 3.92,
+        "end": 9.76,
+        "text": " Although the AB cluster connects strongly to C, combining them would create size 3."
+      },
+      {
+        "start": 9.76,
+        "end": 14.64,
+        "text": " That merges illegal, so we skip it and consider the next candidate."
+      },
+      {
+        "start": 14.64,
+        "end": 19.84,
+        "text": " D and E can merge legally, reducing cut size by another 5 to 8."
+      },
+      {
+        "start": 19.84,
+        "end": 25.6,
+        "text": " Nodes A and B form 1 cluster, C remains alone, and Nodes D and E form another."
+      }
+    ]
+  },
+  {
+    "slide": 9,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.84,
+        "text": " We now have three clusters, and none of the remaining positive affinity merges is legal."
+      },
+      {
+        "start": 5.84,
+        "end": 9.6,
+        "text": " The algorithm stops even though target k is 2."
+      },
+      {
+        "start": 9.6,
+        "end": 15.28,
+        "text": " This target is fundamentally infeasible, two clusters of capacity 2 hold only 4 units."
+      },
+      {
+        "start": 16.32,
+        "end": 21.28,
+        "text": " Our graph contains 5 units, so no algorithm can satisfy both requirements."
+      },
+      {
+        "start": 22.24,
+        "end": 26.72,
+        "text": " The result respects capacity, but target reached must be reported as false."
+      }
+    ]
+  },
+  {
+    "slide": 10,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.0,
+        "text": " Restart from singletons, keeping target K at 2 but increasing capacity to 3."
+      },
+      {
+        "start": 6.0,
+        "end": 11.5,
+        "text": " After merging nodes A and B, their cluster can now legally absorb node C."
+      },
+      {
+        "start": 11.5,
+        "end": 17.0,
+        "text": " This ties with D and E, but our rule first merges the AB cluster with C."
+      },
+      {
+        "start": 17.0,
+        "end": 23.0,
+        "text": " Then D and E merge, leaving 2 clusters, A with B and C, and D with E."
+      },
+      {
+        "start": 23.0,
+        "end": 28.0,
+        "text": " Only the C to D and C to E edges cross, so cut sizes 3."
+      }
+    ]
+  },
+  {
+    "slide": 11,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.24,
+        "text": " Without a capacity limit, target K of 2 produces the same partition and cut size 3."
+      },
+      {
+        "start": 6.24,
+        "end": 11.2,
+        "text": " With capacity 2, the result has 3 clusters and cut size 8."
+      },
+      {
+        "start": 11.2,
+        "end": 17.44,
+        "text": " The difference of 5 comes exactly from A to C and B to C becoming cross cluster edges."
+      },
+      {
+        "start": 17.44,
+        "end": 23.92,
+        "text": " If target K is 3 instead, that same capacity 2 results successfully reaches the target."
+      }
+    ]
+  },
+  {
+    "slide": 12,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.56,
+        "text": " For a small teaching graph, recomputing affinities from original edges is a clear implementation."
+      },
+      {
+        "start": 6.56,
+        "end": 12.4,
+        "text": " After each merge, update membership and sizes, then rebuild the candidate list."
+      },
+      {
+        "start": 12.4,
+        "end": 18.56,
+        "text": " One blocked candidate does not justify stopping, another legal pair may still exist."
+      },
+      {
+        "start": 18.56,
+        "end": 23.36,
+        "text": " Stop at K, or when every positive affinity candidate is illegal."
+      },
+      {
+        "start": 23.36,
+        "end": 29.92,
+        "text": " Our reference rejects invalid sizes and never forces a zero affinity merge just to reach K."
+      }
+    ]
+  },
+  {
+    "slide": 13,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.36,
+        "text": " Now consider a different graph with sizes 2, 2, 1, and 1."
+      },
+      {
+        "start": 5.36,
+        "end": 10.4,
+        "text": " The strongest edge joins C and D, so greedy merges them first."
+      },
+      {
+        "start": 10.4,
+        "end": 16.64,
+        "text": " All three remaining clusters have size 2, and capacity 3 blocks every further merge."
+      },
+      {
+        "start": 16.64,
+        "end": 22.88,
+        "text": " Yet pairing node A with C, and node B with D, gives two legal clusters of size 3."
+      },
+      {
+        "start": 22.88,
+        "end": 29.76,
+        "text": " Here the target is feasible, the greedy history, not total available capacity, causes the failure."
+      }
+    ]
+  },
+  {
+    "slide": 14,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "text": " In this forenote example, every size is 1 and capacity is 2."
+      },
+      {
+        "start": 5.0,
+        "end": 10.0,
+        "text": " Greedy takes the weight 10 AB edge, then the weight 1 CD edge."
+      },
+      {
+        "start": 10.0,
+        "end": 15.0,
+        "text": " The result reaches K legally, but its cross cluster edges sum to 18."
+      },
+      {
+        "start": 15.0,
+        "end": 20.0,
+        "text": " Pairing no day with C, and no D with D, instead gives cut size 11."
+      },
+      {
+        "start": 20.0,
+        "end": 26.0,
+        "text": " This better legal partition proves that Greedy does not guarantee global optimality."
+      }
+    ]
+  },
+  {
+    "slide": 15,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.64,
+        "text": " In the Interactive Lab, predict the next merge before revealing it."
+      },
+      {
+        "start": 4.64,
+        "end": 9.4,
+        "text": " Run all four parameter settings and explain each stopping condition."
+      },
+      {
+        "start": 9.4,
+        "end": 14.4,
+        "text": " Then complete the Python exercise and compare it with the reference traces."
+      },
+      {
+        "start": 14.4,
+        "end": 22.0,
+        "text": " Report actual cluster count, cut size, sizes, capacity compliance, and whether K was reached."
+      },
+      {
+        "start": 22.0,
+        "end": 27.8,
+        "text": " Passing a quiz checks understanding, but does not replace implementation or maintenance."
+      }
+    ]
+  },
+  {
+    "slide": 16,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "text": " Affinity guides the choice, while capacity determines which choices are legal."
+      },
+      {
+        "start": 5.0,
+        "end": 11.0,
+        "text": " Contraction changes the graph, so every later decision must use updated information."
+      },
+      {
+        "start": 11.0,
+        "end": 17.0,
+        "text": " A legal partition, reaching the target, and global optimality, are three different outcomes."
+      },
+      {
+        "start": 17.0,
+        "end": 22.0,
+        "text": " The five note example comes from Youngfu Lisi DA learning course."
+      },
+      {
+        "start": 22.0,
+        "end": 29.0,
+        "text": " This lesson adds new explanations, narration, bilingual captions, and reproducible exercises."
+      }
+    ]
+  }
+]
