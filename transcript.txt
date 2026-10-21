@@ -1,0 +1,114 @@
+Lab 4: Size-constrained agglomerative clustering
+English narration transcript
+Voice: en-US-JennyNeural; rate: -5%
+
+Slide 1: Size-constrained agglomerative clustering
+How can we group connected cells without making any cluster too large?
+This lesson explains size-constrained agglomerative clustering through one small graph.
+We will follow merges, measure cutsize, and explain why the algorithm can stop early.
+By the end, you should be able to reproduce the result and report its limitations.
+
+Slide 2: The EDA graph model
+In this simplified E D A model, each node represents a cell.
+An edge weight describes connectivity: a larger weight means a stronger connection.
+A node also has a size, which can represent cell area rather than node count.
+Here every node has size one, so cluster size equals its number of members.
+Real netlists may use hypergraphs; this lab deliberately uses an undirected weighted graph.
+
+Slide 3: Target K and capacity
+Target K is the desired number of clusters at the end.
+Capacity is a hard upper limit on the total size inside each cluster.
+With capacity two, two unit-size cells fit together, but a third cell does not.
+A small cutsize does not make an oversized cluster legal.
+We must report whether the algorithm actually reaches K while respecting capacity.
+
+Slide 4: Affinity and cutsize
+Affinity measures how strongly two current clusters are connected.
+Add every original edge weight that connects one cluster to the other.
+Cutsize adds all edges whose endpoints belong to different clusters, counting each edge once.
+When two clusters merge, their connecting edges become internal.
+So cutsize falls by exactly their affinity; no other partition boundary changes.
+
+Slide 5: The deterministic greedy rule
+Start with one cluster per node, then consider pairs with positive affinity.
+Discard pairs that would exceed capacity, and choose the strongest remaining pair.
+For ties, sort the members within each cluster, then order the two clusters lexicographically.
+Compare the first member list, then the second; the smallest pair wins.
+Our slides and code share this rule; upstream instead uses synthetic cluster identifiers.
+
+Slide 6: Start with five singleton clusters
+Initially, all five nodes are separate, so every edge crosses a cluster boundary.
+The six edge weights add to eighteen, which is our initial cutsize.
+Nodes A and B, and nodes D and E, each have affinity five.
+Our tie-break first merges nodes A and B, with combined size two.
+Their edge becomes internal, reducing cutsize from eighteen to thirteen.
+
+Slide 7: Contraction updates affinity
+Contraction replaces A and B by one current cluster while retaining both original members.
+The new connection to C combines the old A to C and B to C edges.
+Their weights are one and four, giving affinity five.
+Do not keep only the largest edge, and do not reuse a stale candidate ranking.
+The next choice must use these updated affinities and the updated cluster sizes.
+
+Slide 8: Capacity 2 blocks AB + C
+Now set target K to two and capacity to two.
+Although the A B cluster connects strongly to C, combining them would create size three.
+That merge is illegal, so we skip it and consider the next candidate.
+D and E can merge legally, reducing cutsize by another five to eight.
+Nodes A and B form one cluster, C remains alone, and nodes D and E form another.
+
+Slide 9: Stopping early can be unavoidable
+We now have three clusters, and none of the remaining positive-affinity merges is legal.
+The algorithm stops even though target K is two.
+This target is fundamentally infeasible: two clusters of capacity two hold only four units.
+Our graph contains five units, so no algorithm can satisfy both requirements.
+The result respects capacity, but target reached must be reported as false.
+
+Slide 10: Capacity 3 allows ABC
+Restart from singletons, keeping target K at two but increasing capacity to three.
+After merging nodes A and B, their cluster can now legally absorb node C.
+This ties with D and E, but our rule first merges the A B cluster with C.
+Then D and E merge, leaving two clusters: A with B and C, and D with E.
+Only the C to D and C to E edges cross, so cutsize is three.
+
+Slide 11: Four settings, two partitions
+Without a capacity limit, target K of two produces the same partition and cutsize three.
+With capacity two, the result has three clusters and cutsize eight.
+The difference of five comes exactly from A to C and B to C becoming cross-cluster edges.
+If target K is three instead, that same capacity-two result successfully reaches the target.
+
+Slide 12: A reproducible implementation
+For a small teaching graph, recomputing affinities from original edges is a clear implementation.
+After each merge, update membership and sizes, then rebuild the candidate list.
+One blocked candidate does not justify stopping; another legal pair may still exist.
+Stop at K, or when every positive-affinity candidate is illegal.
+Our reference rejects invalid sizes and never forces a zero-affinity merge just to reach K.
+
+Slide 13: A feasible target can defeat greedy
+Now consider a different graph with sizes two, two, one, and one.
+The strongest edge joins C and D, so greedy merges them first.
+All three remaining clusters have size two, and capacity three blocks every further merge.
+Yet pairing node A with C, and node B with D, gives two legal clusters of size three.
+Here the target is feasible; the greedy history, not total available capacity, causes the failure.
+
+Slide 14: A legal result may be suboptimal
+In this four-node example, every size is one and capacity is two.
+Greedy takes the weight-ten A B edge, then the weight-one C D edge.
+The result reaches K legally, but its cross-cluster edges sum to eighteen.
+Pairing node A with C, and node B with D, instead gives cutsize eleven.
+This better legal partition proves that greedy does not guarantee global optimality.
+
+Slide 15: Your experiment and implementation
+In the interactive lab, predict the next merge before revealing it.
+Run all four parameter settings and explain each stopping condition.
+Then complete the Python exercise and compare it with the reference traces.
+Report actual cluster count, cutsize, sizes, capacity compliance, and whether K was reached.
+Passing a quiz checks understanding, but does not replace implementation or maintenance.
+
+Slide 16: What a correct result tells us
+Affinity guides the choice, while capacity determines which choices are legal.
+Contraction changes the graph, so every later decision must use updated information.
+A legal partition, reaching the target, and global optimality are three different outcomes.
+The five-node example comes from Yongfu Li's E D A learning course.
+This lesson adds new explanations, narration, bilingual captions, and reproducible exercises.
+
